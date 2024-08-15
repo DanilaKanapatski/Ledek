@@ -1,0 +1,46 @@
+header {
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: var(--sec-bg-color);
+    padding: 22px 44px 22px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-text {
+    font-size: 14px;
+    color: var(--link-color);
+    max-width: 147px;
+  }
+  
+  .header-list {
+    display: flex;
+    gap: 45px;
+  }
+  
+  .mail {
+    font-size: 18px;
+    position: relative;
+    padding-left: 20px;
+    color: var(--main-color);
+  }
+  
+  .mail::before {
+    content: url("/assets/mail.svg");
+    position: absolute;
+    left: 0;
+  }
+  
+  .tel {
+    font-size: 18px;
+    color: var(--main-color);
+    position: relative;
+    padding-left: 18px;
+  }
+  
+  .tel::before {
+    position: absolute;
+    content: url("/assets/tel.svg");
+    left: 0;
+  }
