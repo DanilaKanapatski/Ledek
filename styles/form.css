@@ -1,109 +1,201 @@
 .form-section {
-    margin-top: 150px;
-    background: linear-gradient(315deg, #111 0%, #282828 100%);
-    padding: 90px 0 132px;
-    position: relative;
-    overflow: hidden;
+  margin-top: 150px;
+  background: linear-gradient(315deg, #111 0%, #282828 100%);
+  padding: 90px 0 132px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-img1 {
+  position: absolute;
+  right: -270px;
+  top: 0px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.form-img2 {
+  position: absolute;
+  right: -270px;
+  top: 0px;
+  overflow: hidden;
+}
+
+.form-title {
+  max-width: 952px;
+
+  span {
+    color: var(--accent-color);
   }
-  
+}
+
+.form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 45px;
+}
+
+.form-list li {
+  font-size: 23px;
+  line-height: 1.3;
+  position: relative;
+  padding-left: 41px;
+}
+
+.list-one::before {
+  position: absolute;
+  content: url(../assets/form-1.svg);
+  left: 0;
+}
+
+.list-two::before {
+  position: absolute;
+  content: url(../assets/form-2.svg);
+  left: 0;
+}
+
+.list-three::before {
+  position: absolute;
+  content: url(../assets/form-3.svg);
+  left: 0;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.form-btn {
+  background: #5ce091;
+  max-width: 250px;
+  color: var(--sec-accent);
+  border: none;
+  display: inline-block;
+  margin-left: 17px;
+  cursor: pointer;
+}
+
+form input {
+  border: 1px solid var(--main-color);
+  border-radius: 20px;
+  max-width: 338px;
+  width: 100%;
+  background-color: transparent;
+  color: var(--main-color);
+  font-size: 20px;
+  padding: 27px 0 28px 30px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+input:focus-visible {
+  outline-color: var(--accent-color);
+}
+
+.form-politics {
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 30px;
+  font-size: 14px;
+  a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--main-color);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .form-section {
+    margin-top: 241px;
+    padding: 60px 0 376px;
+  }
+
+  .form-img2 {
+    display: none;
+  }
+
   .form-img1 {
-    position: absolute;
-    right: -270px;
-    top: 0px;
-    z-index: 10;
-    overflow: hidden;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 106px;
+  }
+
+  .form-list {
+    margin-top: 30px;
+  }
+
+  form {
+    margin-top: 45px;
+  }
+
+  form input {
+    max-width: 416px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-section {
+    margin-top: 151px;
+    padding: 40px 0 227px;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .form-list li {
+    font-size: 16px;
+    padding-left: 34px;
   }
   
   .form-img2 {
-    position: absolute;
-    right: -270px;
-    top: 0px;
-    overflow: hidden;
+    display: none;
   }
-  
-  .form-title {
-    max-width: 952px;
-  
-    span {
-      color: var(--accent-color);
-    }
+
+  .form-img1 {
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 0px;
   }
-  
-  .form-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 45px;
-  }
-  
-  .form-list li {
-    font-size: 23px;
-    line-height: 1.3;
-    position: relative;
-    padding-left: 41px;
-  }
-  
-  .list-one::before {
-    position: absolute;
-    content: url(../assets/form-1.svg);
-    left: 0;
-  }
-  
-  .list-two::before {
-    position: absolute;
-    content: url(../assets/form-2.svg);
-    left: 0;
-  }
-  
-  .list-three::before {
-    position: absolute;
-    content: url(../assets/form-3.svg);
-    left: 0;
-  }
-  
-  form {
-    margin-top: 50px;
-  }
-  
+
   .form-btn {
-    background: #5ce091;
-    max-width: 250px;
-    color: var(--sec-accent);
-    border: none;
-    display: inline-block;
-    margin-left: 17px;
-    cursor: pointer;
-  }
-  
-  form input {
-    border: 1px solid var(--main-color);
-    border-radius: 20px;
-    max-width: 338px;
-    width: 100%;
-    background-color: transparent;
-    color: var(--main-color);
-    font-size: 20px;
-    padding: 27px 0 28px 30px;
-  }
-  
-  input::placeholder {
+    margin-top: 15px;
+    max-width: 290px;
+    margin-left: 0;
+    font-weight: 500;
     font-size: 16px;
+    line-height: 1.3;
+    padding: 25px 0;
+  }
+
+  .form-list {
+    margin-top: 15px;
+  }
+
+  form {
+    margin-top: 30px;
+  }
+
+  form input {
+    max-width: 290px;
+    padding: 27px 0 26px 25px;
+  }
+
+  form input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.3;
     color: rgba(255, 255, 255, 0.75);
   }
-  
-  input:focus-visible {
-    outline-color: var(--accent-color);
-  }
-  
+
   .form-politics {
-    line-height: 1.3;
-    color: rgba(255, 255, 255, 0.7);
-    margin-top: 30px;
-    font-size: 14px;
-    a {
-      text-decoration: underline;
-      text-decoration-skip-ink: none;
-      color: var(--main-color);
-    }
+    margin-top: 20px;
+    max-width: 239px;
   }
+}

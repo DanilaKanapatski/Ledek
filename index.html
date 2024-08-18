@@ -13,16 +13,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Onest:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <title>Ледек</title>
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="header-desctop">
         <a href="index.html"><img src="assets/header-logo.svg" alt="" /></a>
         <p class="header-text">Завод светодиодных светильников</p>
         <nav class="header-nav">
@@ -37,6 +37,38 @@
         <a class="tel" href="">+7 800 201 92 69</a>
       </header>
     </div>
+    <header class="header-tablet">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo-wrapper">
+            <img
+              src="assets/header-logo.svg"
+              alt="Логотип"
+              class="header-logo"
+            />
+            <p class="header-text">Завод светодиодных светильников</p>
+          </div>
+          <div class="contact-info">
+            <a class="tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <a class="mail" href="mailto:sales@ledek.ru">sales@ledek.ru</a>
+          </div>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#">каталог</a></li>
+        <li><a href="#">наши проекты</a></li>
+        <li><a href="#">о компании</a></li>
+        <li><a href="#">отзывы</a></li>
+      </ul>
+    </nav>
     <main>
       <section class="main">
         <div class="container">
@@ -46,6 +78,10 @@
                 <span>Производим</span> профессиональное светодиодное
                 оборудование <span>для наружного и внутреннего освещения</span>
               </h1>
+              <h1 class="main-title-mob">
+                Производим профессиональное светодиодное оборудование
+              </h1>
+              <p class="main-desc-mob">для наружного и внутреннего освещения</p>
               <div class="main-link__wrapper">
                 <a class="main-link" href="#">Посмотреть каталог</a>
                 <div class="main-arrow">
@@ -53,7 +89,12 @@
                 </div>
               </div>
             </div>
-            <img class="main-img" src="assets/main.png" alt="" />
+            <picture class="main-img">
+              <source srcset="assets/main-3.png" media="(max-width: 768px)" />
+              <source srcset="assets/main-2.png" media="(max-width: 1200px)" />
+              <source srcset="assets/main-1.png" media="(max-width: 1400px)" />
+              <img src="assets/main.png" alt="Main img" />
+            </picture>
             <div class="main-text">
               <div>
                 <span>11 лет</span>
@@ -71,7 +112,7 @@
           </div>
           <div class="main-test">
             <p>Создаём и проектируем современные световые решения</p>
-            <a href="">Тест-Драйв</a>
+            <a class="main-test-link" href="#">Тест-Драйв</a>
           </div>
         </div>
       </section>
@@ -79,47 +120,143 @@
         <div class="container">
           <h2 class="title catalog-title">Каталог</h2>
           <div class="slide">
-            <h3 class="swiper-title">Промышленное освещение</h3>
+            <h3 class="swiper-title first-slider">Промышленное освещение</h3>
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/prom-nanotech.html"><img src="assets/catalog-1.png" alt="Image 1" /></a>
+                    <a href="pages/prom-nanotech.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-1.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-1.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-1.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-1.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">5 моделей</span>
                   <p class="slide-name">Nano-Tech</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/prom-nanosfera.html"><img src="assets/catalog-2.png" alt="Image 1" /></a>
+                    <a href="pages/prom-nanosfera.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-2.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-2.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-2.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-2.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">4 модели</span>
                   <p class="slide-name">Nano-Sfera</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/prom-nanotechlens.html"><img src="assets/catalog-3.png" alt="Image 1" /></a>
+                    <a href="pages/prom-nanotechlens.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-3.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-3.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-3.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-3.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">6 моделей</span>
                   <p class="slide-name">Nano Tech Lens</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/prom-nanotermo.html"><img src="assets/catalog-4.png" alt="Image 1" /></a>
+                    <a href="pages/prom-nanotermo.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-4.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-4.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-4.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-4.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">3 модели</span>
                   <p class="slide-name">Nano-Termo</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/prom-nanosferagold.html"><img src="assets/catalog-1.png" alt="Image 1" /></a>
+                    <a href="pages/prom-nanosferagold.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-4.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-4.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-4.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-4.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">3 модели</span>
                   <p class="slide-name">Nano-Sfera Gold</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/prom-emodule.html"><img src="assets/catalog-4.png" alt="Image 1" /></a>
+                    <a href="pages/prom-emodule.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-4.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-4.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-4.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-4.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">3 модели</span>
                   <p class="slide-name">Ё-Module</p>
@@ -138,42 +275,140 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/street-nanoeco.html"><img src="assets/catalog-5.png" alt="Image 1" /></a>
+                    <a href="pages/street-nanoeco.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-5.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-5.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-5.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-5.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">5 моделей</span>
                   <p class="slide-name">Nano HIGHWAY ECO</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/street-nanopremium.html"><img src="assets/catalog-6.png" alt="Image 1" /></a>
+                    <a href="pages/street-nanopremium.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-6.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-6.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-6.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-6.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">4 модели</span>
                   <p class="slide-name">Nano HIGHWAY Premium</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/street-nano.html"><img src="assets/catalog-7.png" alt="Image 1" /></a>
+                    <a href="pages/street-nano.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-7.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-7.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-7.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-7.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">6 моделей</span>
                   <p class="slide-name">Nano-Street</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/street-nanosfera.html"><img src="assets/catalog-8.png" alt="Image 1" /></a>
+                    <a href="pages/street-nanosfera.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-8.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-8.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-8.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-8.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">3 модели</span>
                   <p class="slide-name">Nano-Sfera</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/street-nanotechlens.html"><img src="assets/catalog-9.png" alt="Image 1" /></a>
+                    <a href="pages/street-nanotechlens.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-9.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-9.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-9.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-9.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">6 моделей</span>
                   <p class="slide-name">Nano Tech Lens</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/street-nanopark.html"><img src="assets/catalog-10.png" alt="Image 1" /></a>
+                    <a href="pages/street-nanopark.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-10.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-10.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-10.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img
+                          src="assets/catalog-10.png"
+                          alt="Main img"
+                        /> </picture
+                    ></a>
                   </div>
                   <span class="slide-desc">4 модели</span>
                   <p class="slide-name">Nano-Park</p>
@@ -192,7 +427,23 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/auto-nanoazs.html"><img src="assets/catalog-11.png" alt="Image 1" /></a>
+                    <a href="pages/auto-nanoazs.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-11.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-11.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-11.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-11.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">2 модели</span>
                   <p class="slide-name">Nano-AZS</p>
@@ -201,40 +452,126 @@
             </div>
           </div>
           <div class="slide">
-            <h3 class="swiper-title">Парковые светильники</h3>
+            <h3 class="swiper-title first-slider">Парковые светильники</h3>
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/nanopark1.html"><img src="assets/catalog-12.png" alt="Image 1" /></a>
+                    <a href="pages/nanopark1.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-12.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-12.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-12.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img
+                          src="assets/catalog-12.png"
+                          alt="Main img"
+                        /> </picture
+                    ></a>
                   </div>
                   <span class="slide-desc">?</span>
                   <p class="slide-name">Nano-Park 1</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/nanopark2.html"><img src="assets/catalog-6.png" alt="Image 1" /></a>
+                    <a href="pages/nanopark2.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-6.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-6.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-6.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-6.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">4 модели</span>
                   <p class="slide-name">Nano-Park 2</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/nanopark3.html"><img src="assets/catalog-13.png" alt="Image 1" /></a>
+                    <a href="pages/nanopark3.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-13.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-13.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-13.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img
+                          src="assets/catalog-13.png"
+                          alt="Main img"
+                        /> </picture
+                    ></a>
                   </div>
                   <span class="slide-desc">3 модели</span>
                   <p class="slide-name">Nano-Park 3</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/nanopark4.html"><img src="assets/catalog-8.png" alt="Image 1" /></a>
+                    <a href="pages/nanopark4.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-14.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-14.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-14.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-14.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">?</span>
                   <p class="slide-name">Nano-Park 4</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/nanopilon.html"><img src="assets/catalog-14.png" alt="Image 1" /></a>
+                    <a href="pages/nanopilon.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-14.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-14.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-14.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img
+                          src="assets/catalog-14.png"
+                          alt="Main img"
+                        /> </picture
+                    ></a>
                   </div>
                   <span class="slide-desc">2 модели</span>
                   <p class="slide-name">Nano Pilon</p>
@@ -247,32 +584,134 @@
               <div class="swiper-button-prev"></div>
             </div>
           </div>
-          <div class="no-slide">
+          <div class="no-slide light">
             <h3 class="swiper-title">Освещение периметров</h3>
             <div class="no-swiper-container">
               <div class="no-swiper-wrapper">
                 <div class="no-swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/perimeter-efly.html"><img src="assets/catalog-15.png" alt="Image 1" /></a>
+                    <a href="pages/perimeter-efly.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-15.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-15.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">?</span>
                   <p class="slide-name">E-Fly</p>
                 </div>
                 <div class="no-swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/perimeter-nanoeco.html"><img src="assets/catalog-16.png" alt="Image 1" /></a>
+                    <a href="pages/perimeter-nanoeco.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-16.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-16.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">5 моделей</span>
                   <p class="slide-name">Nano HIGHWAY ECO</p>
                 </div>
                 <div class="no-swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/perimeter-nanostreet.html"><img src="assets/catalog-17.png" alt="Image 1" /></a>
+                    <a href="pages/perimeter-nanostreet.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-17.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-17.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">3 модели</span>
                   <p class="slide-name">Nano-Street ECO</p>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="slide dark">
+            <h3 class="swiper-title">Освещение периметров</h3>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-img__wrapper">
+                    <a href="pages/perimeter-efly.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-15.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-15.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-15.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-15.png" alt="Main img" />
+                      </picture>
+                    </a>
+                  </div>
+                  <span class="slide-desc">?</span>
+                  <p class="slide-name">E-Fly</p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-img__wrapper">
+                    <a href="pages/perimeter-nanoeco.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-16.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-16.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-16.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-16.png" alt="Main img" />
+                      </picture>
+                    </a>
+                  </div>
+                  <span class="slide-desc">5 моделей</span>
+                  <p class="slide-name">Nano HIGHWAY ECO</p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-img__wrapper">
+                    <a href="pages/perimeter-nanostreet.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-17.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-17.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-17.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-17.png" alt="Main img" />
+                      </picture>
+                    </a>
+                  </div>
+                  <span class="slide-desc">3 модели</span>
+                  <p class="slide-name">Nano-Street ECO</p>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
           <div class="slide">
@@ -281,42 +720,146 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/arhi-nanoarh1.html"><img src="assets/catalog-5.png" alt="Image 1" /></a>
+                    <a href="pages/arhi-nanoarh1.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-1.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-1.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-1.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-1.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">?</span>
                   <p class="slide-name">Nano-ARH 1</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/arhi-nanoarh2.html"><img src="assets/catalog-6.png" alt="Image 1" /></a>
+                    <a href="pages/arhi-nanoarh2.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-1.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-1.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-1.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-1.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">?</span>
                   <p class="slide-name">Nano-ARH 2</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/arhi-nanofront.html"><img src="assets/catalog-18.png" alt="Image 1" /></a>
+                    <a href="pages/arhi-nanofront.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-18.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-18.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-18.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img
+                          src="assets/catalog-18.png"
+                          alt="Main img"
+                        /> </picture
+                    ></a>
                   </div>
                   <span class="slide-desc">?</span>
                   <p class="slide-name">Nano-FRONT</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/arhi-nanoqub.html"><img src="assets/catalog-19.png" alt="Image 1" /></a>
+                    <a href="pages/arhi-nanoqub.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-19.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-19.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-19.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img
+                          src="assets/catalog-19.png"
+                          alt="Main img"
+                        /> </picture
+                    ></a>
                   </div>
                   <span class="slide-desc">?</span>
                   <p class="slide-name">Nano-QUB</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/arhi-nanogrunt.html"><img src="assets/catalog-20.png" alt="Image 1" /></a>
+                    <a href="pages/arhi-nanogrunt.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-20.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-20.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-20.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img
+                          src="assets/catalog-20.png"
+                          alt="Main img"
+                        /> </picture
+                    ></a>
                   </div>
                   <span class="slide-desc">2 модели</span>
                   <p class="slide-name">Nano-GRUNT</p>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/arhi-nanosfera.html"><img src="assets/catalog-21.png" alt="Image 1" /></a>
+                    <a href="pages/arhi-nanosfera.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-21.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-21.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-21.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img
+                          src="assets/catalog-21.png"
+                          alt="Main img"
+                        /> </picture
+                    ></a>
                   </div>
                   <span class="slide-desc">4 модели</span>
                   <p class="slide-name">Nano-Sfera</p>
@@ -335,7 +878,23 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/trade-nano.html"><img src="assets/catalog-22.png" alt="Image 1" /></a>
+                    <a href="pages/trade-nano.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-22.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-22.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-22.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-22.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">?</span>
                   <p class="slide-name">Nano-Trade</p>
@@ -343,27 +902,51 @@
               </div>
             </div>
           </div>
-          <div class="no-slide">
+          <div class="no-slide light">
             <h3 class="swiper-title">Спортивное освещение</h3>
             <div class="no-swiper-container">
               <div class="no-swiper-wrapper">
                 <div class="no-swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/sport-emodule.html"><img src="assets/catalog-23.png" alt="Image 1" /></a>
+                    <a href="pages/sport-emodule.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-23.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-23.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">3 модели</span>
                   <p class="slide-name">Ё-Module</p>
                 </div>
                 <div class="no-swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/sport-nanosfera.html"><img src="assets/catalog-24.png" alt="Image 1" /></a>
+                    <a href="pages/sport-nanosfera.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-24.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-24.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">4 модели</span>
                   <p class="slide-name">Nano-Sfera</p>
                 </div>
                 <div class="no-swiper-slide">
                   <div class="slide-img__wrapper">
-                    <a href="pages/sport-nano.html"><img src="assets/catalog-17.png" alt="Image 1" /></a>
+                    <a href="pages/sport-nano.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-17.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-17.png" alt="Main img" />
+                      </picture>
+                    </a>
                   </div>
                   <span class="slide-desc">?</span>
                   <p class="slide-name">Nano-Sport</p>
@@ -371,10 +954,92 @@
               </div>
             </div>
           </div>
+          <div class="slide dark">
+            <h3 class="swiper-title first-slider">Спортивное освещение</h3>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-img__wrapper">
+                    <a href="pages/sport-emodule.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-23.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-23.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-23.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-23.png" alt="Main img" />
+                      </picture>
+                    </a>
+                  </div>
+                  <span class="slide-desc">3 модели</span>
+                  <p class="slide-name">Ё-Module</p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-img__wrapper">
+                    <a href="pages/sport-nanosfera.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-24.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-24.2.png"
+                          media="(max-width: 1200px)"
+                        />
+                        <source
+                          srcset="assets/catalog-24.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-24.png" alt="Main img" />
+                      </picture>
+                    </a>
+                  </div>
+                  <span class="slide-desc">4 модели</span>
+                  <p class="slide-name">Nano-Sfera</p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-img__wrapper">
+                    <a href="pages/sport-nano.html">
+                      <picture>
+                        <source
+                          srcset="assets/catalog-17.3.png"
+                          media="(max-width: 768px)"
+                        />
+                        <source
+                          srcset="assets/catalog-17.2.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <source
+                          srcset="assets/catalog-17.1.png"
+                          media="(max-width: 1400px)"
+                        />
+                        <img src="assets/catalog-17.png" alt="Main img" />
+                      </picture>
+                    </a>
+                  </div>
+                  <span class="slide-desc">?</span>
+                  <p class="slide-name">Nano-Sport</p>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="form-section">
-        <img class="form-img1" src="assets/form-4.png" alt="" />
+        <picture class="form-img1">
+          <source srcset="assets/form-4.2.png" media="(max-width: 768px)" />
+          <source srcset="assets/form-4.1.png" media="(max-width: 1200px)" />
+          <img src="assets/form-4.png" alt="Main img" />
+        </picture>
         <img class="form-img2" src="assets/form-5.png" alt="" />
         <div class="container">
           <h2 class="title form-title">
@@ -402,7 +1067,12 @@
         <div class="container">
           <h2 class="title">О нас</h2>
           <div class="about-wrapper">
-            <img src="assets/about.png" alt="" />
+            <picture>
+              <source srcset="assets/about-3.png" media="(max-width: 768px)" />
+              <source srcset="assets/about-2.png" media="(max-width: 1200px)" />
+              <source srcset="assets/about-1.png" media="(max-width: 1400px)" />
+              <img src="assets/about.png" alt="Main img" />
+            </picture>
             <div class="about-text">
               <h3 class="about-text__title">
                 Компания-производитель профессионального светодиодного
@@ -453,56 +1123,188 @@
           <h2 class="title">Наши проекты</h2>
           <div class="projects-wrapper">
             <div class="project">
-              <img src="assets/projects-1.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-1.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="assets/projects-1.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-1.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-1.png" alt="Main img" />
+              </picture>
               <span class="project-city">г. Ростов-на-Дону</span>
               <p class="project-building">ФГУП "ДИНАМО"</p>
             </div>
             <div class="project">
-              <img src="assets/projects-2.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-2.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="assets/projects-2.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-2.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-2.png" alt="Main img" />
+              </picture>
               <span class="project-city">г. Владикавказ </span>
               <p class="project-building">
                 Торговый центр строительных материалов
               </p>
             </div>
             <div class="project">
-              <img src="assets/projects-3.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-3.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="assets/projects-3.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-3.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-3.png" alt="Main img" />
+              </picture>
               <span class="project-city">г. Ростов-на-Дону</span>
               <p class="project-building">Архитектурное освещение </p>
             </div>
             <div class="project">
-              <img src="assets/projects-4.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-4.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="assets/projects-4.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-4.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-4.png" alt="Main img" />
+              </picture>
               <span class="project-city">г. Камышин</span>
               <p class="project-building">
                 Горячий цех стеклотарного производства
               </p>
             </div>
             <div class="project">
-              <img src="assets/projects-5.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-5.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="assets/projects-5.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-5.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-5.png" alt="Main img" />
+              </picture>
               <span class="project-city">г. Шахты</span>
               <p class="project-building">Швейная фабрика</p>
             </div>
             <div class="project">
-              <img src="assets/projects-6.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-6.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="assets/projects-6.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-6.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-6.png" alt="Main img" />
+              </picture>
               <span class="project-city">г. Санкт-петербург</span>
               <p class="project-building">ООО «Нева-атопратс»</p>
             </div>
             <div class="project">
-              <img src="assets/projects-7.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-7.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="assets/projects-7.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-7.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-7.png" alt="Main img" />
+              </picture>
               <span class="project-city">Республика Беларусь г. Могилёв</span>
               <p class="project-building">Мебельная фабрика «Мебелиан»</p>
             </div>
             <div class="project">
-              <img src="assets/projects-8.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-8.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="assets/projects-8.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-8.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-8.png" alt="Main img" />
+              </picture>
               <span class="project-city">г. Воронеж</span>
               <p class="project-building">ЗАО «Воронежстальмост»</p>
             </div>
             <div class="project">
-              <img src="assets/projects-9.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-9.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-9.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-9.png" alt="Main img" />
+              </picture>
               <span class="project-city">г. Воронеж</span>
               <p class="project-building">Спортивный комплекс Энергия</p>
             </div>
             <div class="project">
-              <img src="assets/projects-10.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-10.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-10.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-10.png" alt="Main img" />
+              </picture>
               <span class="project-city">г. Ижевск</span>
               <p class="project-building">
                 Цех по производству гальванического оборудования и очистных
@@ -510,12 +1312,32 @@
               </p>
             </div>
             <div class="project">
-              <img src="assets/projects-11.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-11.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-11.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-11.png" alt="Main img" />
+              </picture>
               <span class="project-city">г. Санкт-петербург</span>
               <p class="project-building">Фертоинг</p>
             </div>
             <div class="project">
-              <img src="assets/projects-12.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/projects-12.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/projects-12.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/projects-12.png" alt="Main img" />
+              </picture>
               <span class="project-city">г. Краснодар</span>
               <p class="project-building">Кубанская картонажная фабрика</p>
             </div>
@@ -527,7 +1349,21 @@
           <h2 class="title">Отзывы</h2>
           <div class="reviews-wrapper">
             <div class="review">
-              <img src="assets/reviews-1.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/reviews-1.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="assets/reviews-1.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/reviews-1.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/reviews-1.png" alt="Main img" />
+              </picture>
               <div class="review-text">
                 <span class="review-name">ООО «Ижметиз»</span>
                 <span class="review-city">г. Ижевск</span>
@@ -536,7 +1372,21 @@
               </div>
             </div>
             <div class="review">
-              <img src="assets/reviews-2.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/reviews-2.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="assets/reviews-2.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/reviews-2.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/reviews-2.png" alt="Main img" />
+              </picture>
               <div class="review-text">
                 <span class="review-name">МУП «Метроэлектротранс»</span>
                 <span class="review-city">г. Волгоград</span>
@@ -545,7 +1395,21 @@
               </div>
             </div>
             <div class="review">
-              <img src="assets/reviews-3.png" alt="" />
+              <picture>
+                <source
+                  srcset="assets/reviews-3.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="assets/reviews-3.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="assets/reviews-3.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="assets/reviews-3.png" alt="Main img" />
+              </picture>
               <div class="review-text">
                 <span class="review-name">МУП «РОСТГОРСВЕТ»</span>
                 <span class="review-city">г. Ростов-на-Дону</span>
@@ -584,7 +1448,13 @@
                 >Заявка на аудит и техническое задание</a
               >
             </div>
-            <img src="assets/guarantee-1.png" alt="" />
+            <picture>
+              <source
+                srcset="assets/guarantee-1.1.png"
+                media="(max-width: 1400px)"
+              />
+              <img src="assets/guarantee-1.png" alt="Main img" />
+            </picture>
           </div>
           <div class="guarantee-wrapper">
             <div class="guarantee-text">
@@ -604,7 +1474,13 @@
                 >Заполнить форму для рекламации</a
               >
             </div>
-            <img src="assets/guarantee-2.png" alt="" />
+            <picture>
+              <source
+                srcset="assets/guarantee-2.1.png"
+                media="(max-width: 1400px)"
+              />
+              <img src="assets/guarantee-2.png" alt="Main img" />
+            </picture>
           </div>
         </div>
       </section>
@@ -625,7 +1501,21 @@
               её целостность при получении
             </p>
           </div>
-          <img src="assets/delivery.svg" alt="" />
+          <picture>
+            <source
+              srcset="assets/delivery-1.svg"
+              media="(max-width: 768px)"
+            />
+            <!-- <source
+              srcset="assets/reviews-3.2.png"
+              media="(max-width: 1200px)"
+            />
+            <source
+              srcset="assets/reviews-3.1.png"
+              media="(max-width: 1400px)"
+            /> -->
+            <img src="assets/delivery.svg" alt="" />
+          </picture>
         </div>
       </section>
       <section class="contacts">
@@ -716,7 +1606,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-container">
@@ -765,6 +1655,84 @@
               <p>КПП 6616301001</p>
               <p>ОГРН 1216100010059</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-tablet">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div>
+              <div class="logo">
+                <a href="index.html"
+                  ><img src="assets/header-logo.svg" alt=""
+                /></a>
+                <p class="logo-desc">Завод светодиодных светильников</p>
+              </div>
+              <p class="footer-address">
+                Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+                Бизнес-Центр "БРИСТОЛЬ")
+              </p>
+              <p class="footer-official">Официальный производитель LEDEK</p>
+              <p class="footer-social">
+                Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+              </p>
+              <div class="footer-dopdesc">
+                <p>ИНН 6163222441</p>
+                <p>КПП 6616301001</p>
+                <p>ОГРН 1216100010059</p>
+              </div>
+              <a class="footer-politics" href=""
+                >Политика конфиденциальных данных</a
+              >
+              <a class="develop" href="">Разработка сайта</a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <a class="footer-tel" href="">+7 800 201 92 69</a>
+            <a class="footer-call" href="">Заказать звонок</a>
+            <a class="footer-mail" href="">sales@ledek.ru</a>
+            <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-mob">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+              <div class="logo">
+                <a href="index.html"
+                  ><img src="assets/header-logo.svg" alt=""
+                /></a>
+                <p class="logo-desc">Завод светодиодных светильников</p>
+              </div>
+              <div class="footer-info">
+                <a class="footer-tel" href="">+7 800 201 92 69</a>
+                <a class="footer-call" href="">Заказать звонок</a>
+                <a class="footer-mail" href="">sales@ledek.ru</a>
+                <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+              </div>
+          </div>
+          <div>
+            <p class="footer-address">
+              Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+              Бизнес-Центр "БРИСТОЛЬ")
+            </p>
+            <p class="footer-official">Официальный производитель LEDEK</p>
+            <p class="footer-social">
+              Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+            </p>
+            <div class="footer-dopdesc">
+              <p>ИНН 6163222441</p>
+              <p>КПП 6616301001</p>
+              <p>ОГРН 1216100010059</p>
+            </div>
+            <a class="footer-politics" href=""
+              >Политика конфиденциальных данных</a
+            >
+            <a class="develop" href="">Разработка сайта</a>
           </div>
         </div>
       </div>
