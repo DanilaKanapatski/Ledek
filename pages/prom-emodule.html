@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="header-desctop">
         <a href="../index.html"
           ><img src="../assets/header-logo.svg" alt=""
         /></a>
@@ -39,13 +39,61 @@
         <a class="tel" href="">+7 800 201 92 69</a>
       </header>
     </div>
+    <header class="header-tablet">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo-wrapper">
+            <img
+              src="../assets/header-logo.svg"
+              alt="Логотип"
+              class="header-logo"
+            />
+            <p class="header-text">Завод светодиодных светильников</p>
+          </div>
+          <div class="contact-info">
+            <a class="tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <a class="mail" href="mailto:sales@ledek.ru">sales@ledek.ru</a>
+          </div>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#">каталог</a></li>
+        <li><a href="#">наши проекты</a></li>
+        <li><a href="#">о компании</a></li>
+        <li><a href="#">отзывы</a></li>
+      </ul>
+    </nav>
     <main>
       <section class="main">
         <div class="container">
             <div class="main-text">
                 <h1 class="title">Светильник Ё-Module</h1>
                 <p class="main-desc">Светильник серии Ё-Module S предназначен для освещения промышленных предприятий, спортивных объектов, парковок, торгово-выставочных площадей, автодорог и парковых зон при любых погодных условиях, соответствующих климатическому исполнению. <span>Светодиодный светильник Ё-Module 600 S — пользуется повышенным спросом у инженерно-технического состава промышленных предприятий, нравится проектировщикам проектных институтов и проджект-продавцам Данная серия светильника предназначена для проектной продажи, реализации сложных технических решений Опыт и наличие компетентного инженерно — конструкторского бюро позволяет реализовывать нестандартные проекты на базе Ё-Module Допустим заказ светодиодных светильников нестандартной мощности, например,646 Вт, при этом возможен шаг мощности в 1 Вт.</span></p>
-                <img class="main-img" src="../assets/emodule-1.png" alt="">
+                
+                <picture>
+                  <source
+                  srcset="../assets/emodule-1.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                srcset="../assets/emodule-1.2.png"
+                media="(max-width: 1200px)"
+              />
+                  <source
+                    srcset="../assets/emodule-1.1.png"
+                    media="(max-width: 1400px)"
+                  />
+                  <img class="main-img" src="../assets/emodule-1.png" alt="">
+                </picture>
+                
             </div>
         </div>
       </section>
@@ -54,23 +102,60 @@
             <div class="items-wrapper">
                 <div>
                     <div class="img-wrapper">
+                        
+                      <picture>
+                        <source
+                        srcset="../assets/emodule-2.3.png"
+                        media="(max-width: 768px)"
+                      />
+                      <source
+                      srcset="../assets/emodule-2.2.png"
+                      media="(max-width: 1200px)"
+                    />
+                        <source
+                          srcset="../assets/emodule-2.1.png"
+                          media="(max-width: 1400px)"
+                        />
                         <img src="../assets/emodule-2.png" alt="">
+                      </picture>
                     </div>
                     <div>
                         <p class="item-desc__color">Цветовая температура</p>
                         <div class="item-colors">
-                            <div>
-                                <img src="../assets/nanoterm-1.png" alt="">
-                                <span>до 3500К</span>
-                            </div>
-                            <div>
-                                <img src="../assets/nanoterm-2.png" alt="">
-                                <span>до 5500К</span>
-                            </div>
-                            <div>
-                                <img src="../assets/nanoterm-3.png" alt="">
-                                <span>до 7000К</span>
-                            </div>
+                          <div>
+                                
+                            <picture>
+                              <source
+                              srcset="../assets/nanoterm-1.1.png"
+                              media="(max-width: 768px)"
+                            />
+                           
+                              <img src="../assets/nanoterm-1.png" alt="">
+                            </picture>
+                            <span>до 3500К</span>
+                        </div>
+                        <div>
+                          <picture>
+                            <source
+                            srcset="../assets/nanoterm-2.1.png"
+                            media="(max-width: 768px)"
+                          />
+                         
+                            <img src="../assets/nanoterm-2.png" alt="">
+                          </picture>
+                            <span>до 5500К</span>
+                        </div>
+                        <div>
+                          <picture>
+                            <source
+                            srcset="../assets/nanoterm-3.1.png"
+                            media="(max-width: 768px)"
+                          />
+                         
+                            <img src="../assets/nanoterm-3.png" alt="">
+                          </picture>
+                            <span>до 7000К</span>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -115,6 +200,68 @@
                             <li>Решетка для защиты оптики </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">360 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">156 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">PHILIPS Xitanium/MEAN WELL/Inventronics</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л</p>
+                          <ul>
+                            <li>Д – косинусная</li>
+                            <li>Г – глубокая</li>
+                            <li>К – концентрированная</li>
+                            <li>Ш – широкая</li>
+                            <li>Л – полуширокая</li>
+                        </ul>
+
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">320*412*263</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">14,4</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Поворотная Лира</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Цветовая температура</span>
+                          <p class="mob-desc">4000/5000/6500К</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Опционально </span>
+                          <p class="mob-desc">Решетка для защиты оптики </p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -124,23 +271,59 @@
             <div class="items-wrapper">
                 <div>
                     <div class="img-wrapper">
+                      <picture>
+                        <source
+                        srcset="../assets/emodule-3.3.png"
+                        media="(max-width: 768px)"
+                      />
+                      <source
+                      srcset="../assets/emodule-3.2.png"
+                      media="(max-width: 1200px)"
+                    />
+                        <source
+                          srcset="../assets/emodule-3.1.png"
+                          media="(max-width: 1400px)"
+                        />
                         <img src="../assets/emodule-3.png" alt="">
+                      </picture>
                     </div>
                     <div>
                         <p class="item-desc__color">Цветовая температура</p>
                         <div class="item-colors">
-                            <div>
-                                <img src="../assets/nanoterm-1.png" alt="">
-                                <span>до 3500К</span>
-                            </div>
-                            <div>
-                                <img src="../assets/nanoterm-2.png" alt="">
-                                <span>до 5500К</span>
-                            </div>
-                            <div>
-                                <img src="../assets/nanoterm-3.png" alt="">
-                                <span>до 7000К</span>
-                            </div>
+                          <div>
+                                
+                            <picture>
+                              <source
+                              srcset="../assets/nanoterm-1.1.png"
+                              media="(max-width: 768px)"
+                            />
+                           
+                              <img src="../assets/nanoterm-1.png" alt="">
+                            </picture>
+                            <span>до 3500К</span>
+                        </div>
+                        <div>
+                          <picture>
+                            <source
+                            srcset="../assets/nanoterm-2.1.png"
+                            media="(max-width: 768px)"
+                          />
+                         
+                            <img src="../assets/nanoterm-2.png" alt="">
+                          </picture>
+                            <span>до 5500К</span>
+                        </div>
+                        <div>
+                          <picture>
+                            <source
+                            srcset="../assets/nanoterm-3.1.png"
+                            media="(max-width: 768px)"
+                          />
+                         
+                            <img src="../assets/nanoterm-3.png" alt="">
+                          </picture>
+                            <span>до 7000К</span>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -177,6 +360,60 @@
                             <li>Решетка для защиты оптики </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">480 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">156 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">PHILIPS Xitanium/MEAN WELL/Inventronics</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">412*320*263</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">21,6</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Поворотная Лира</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Цветовая температура</span>
+                          <p class="mob-desc">4000/5000/6500К</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Опционально </span>
+                          <p class="mob-desc">Решетка для защиты оптики </p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -186,23 +423,59 @@
             <div class="items-wrapper">
                 <div>
                     <div class="img-wrapper">
+                      <picture>
+                        <source
+                        srcset="../assets/emodule-4.3.png"
+                        media="(max-width: 768px)"
+                      />
+                      <source
+                      srcset="../assets/emodule-4.2.png"
+                      media="(max-width: 1200px)"
+                    />
+                        <source
+                          srcset="../assets/emodule-4.1.png"
+                          media="(max-width: 1400px)"
+                        />
                         <img src="../assets/emodule-4.png" alt="">
+                      </picture>
                     </div>
                     <div>
                         <p class="item-desc__color">Цветовая температура</p>
                         <div class="item-colors">
-                            <div>
-                                <img src="../assets/nanoterm-1.png" alt="">
-                                <span>до 3500К</span>
-                            </div>
-                            <div>
-                                <img src="../assets/nanoterm-2.png" alt="">
-                                <span>до 5500К</span>
-                            </div>
-                            <div>
-                                <img src="../assets/nanoterm-3.png" alt="">
-                                <span>до 7000К</span>
-                            </div>
+                          <div>
+                                
+                            <picture>
+                              <source
+                              srcset="../assets/nanoterm-1.1.png"
+                              media="(max-width: 768px)"
+                            />
+                           
+                              <img src="../assets/nanoterm-1.png" alt="">
+                            </picture>
+                            <span>до 3500К</span>
+                        </div>
+                        <div>
+                          <picture>
+                            <source
+                            srcset="../assets/nanoterm-2.1.png"
+                            media="(max-width: 768px)"
+                          />
+                         
+                            <img src="../assets/nanoterm-2.png" alt="">
+                          </picture>
+                            <span>до 5500К</span>
+                        </div>
+                        <div>
+                          <picture>
+                            <source
+                            srcset="../assets/nanoterm-3.1.png"
+                            media="(max-width: 768px)"
+                          />
+                         
+                            <img src="../assets/nanoterm-3.png" alt="">
+                          </picture>
+                            <span>до 7000К</span>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -239,6 +512,60 @@
                             <li>Решетка для защиты оптики </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">800 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">156 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">PHILIPS Xitanium/MEAN WELL/Inventronics</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">572*313*460</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">32,4</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Поворотная Лира</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Цветовая температура</span>
+                          <p class="mob-desc">4000/5000/6500К</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Опционально </span>
+                          <p class="mob-desc">Решетка для защиты оптики </p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -248,7 +575,11 @@
         </div>
       </section>
       <section class="form-section">
-        <img class="form-img1" src="../assets/form-4.png" alt="" />
+        <picture class="form-img1">
+          <source srcset="../assets/form-4.2.png" media="(max-width: 768px)" />
+          <source srcset="../assets/form-4.1.png" media="(max-width: 1200px)" />
+          <img src="../assets/form-4.png" alt="Main img" />
+        </picture>
         <img class="form-img2" src="../assets/form-5.png" alt="" />
         <div class="container">
           <h2 class="title form-title">
@@ -273,7 +604,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-container">
@@ -326,5 +657,84 @@
         </div>
       </div>
     </footer>
+    <footer class="footer-tablet">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div>
+              <div class="logo">
+                <a href="../index.html"
+                  ><img src="../assets/header-logo.svg" alt=""
+                /></a>
+                <p class="logo-desc">Завод светодиодных светильников</p>
+              </div>
+              <p class="footer-address">
+                Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+                Бизнес-Центр "БРИСТОЛЬ")
+              </p>
+              <p class="footer-official">Официальный производитель LEDEK</p>
+              <p class="footer-social">
+                Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+              </p>
+              <div class="footer-dopdesc">
+                <p>ИНН 6163222441</p>
+                <p>КПП 6616301001</p>
+                <p>ОГРН 1216100010059</p>
+              </div>
+              <a class="footer-politics" href=""
+                >Политика конфиденциальных данных</a
+              >
+              <a class="develop" href="">Разработка сайта</a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <a class="footer-tel" href="">+7 800 201 92 69</a>
+            <a class="footer-call" href="">Заказать звонок</a>
+            <a class="footer-mail" href="">sales@ledek.ru</a>
+            <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-mob">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../assets/header-logo.svg" alt=""
+              /></a>
+              <p class="logo-desc">Завод светодиодных светильников</p>
+            </div>
+            <div class="footer-info">
+              <a class="footer-tel" href="">+7 800 201 92 69</a>
+              <a class="footer-call" href="">Заказать звонок</a>
+              <a class="footer-mail" href="">sales@ledek.ru</a>
+              <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-address">
+              Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+              Бизнес-Центр "БРИСТОЛЬ")
+            </p>
+            <p class="footer-official">Официальный производитель LEDEK</p>
+            <p class="footer-social">
+              Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+            </p>
+            <div class="footer-dopdesc">
+              <p>ИНН 6163222441</p>
+              <p>КПП 6616301001</p>
+              <p>ОГРН 1216100010059</p>
+            </div>
+            <a class="footer-politics" href=""
+              >Политика конфиденциальных данных</a
+            >
+            <a class="develop" href="">Разработка сайта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
   </body>
 </html>

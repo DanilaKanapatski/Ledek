@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="header-desctop">
         <a href="../index.html"
           ><img src="../assets/header-logo.svg" alt=""
         /></a>
@@ -39,13 +39,60 @@
         <a class="tel" href="">+7 800 201 92 69</a>
       </header>
     </div>
+    <header class="header-tablet">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo-wrapper">
+            <img
+              src="../assets/header-logo.svg"
+              alt="Логотип"
+              class="header-logo"
+            />
+            <p class="header-text">Завод светодиодных светильников</p>
+          </div>
+          <div class="contact-info">
+            <a class="tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <a class="mail" href="mailto:sales@ledek.ru">sales@ledek.ru</a>
+          </div>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#">каталог</a></li>
+        <li><a href="#">наши проекты</a></li>
+        <li><a href="#">о компании</a></li>
+        <li><a href="#">отзывы</a></li>
+      </ul>
+    </nav>
     <main>
       <section class="main">
         <div class="container">
             <div class="main-text">
                 <h1 class="title">Светильник NanoTech Lens</h1>
                 <p class="main-desc">Промышленные светодиодные светильники NanoTech LENS - выбор сведущего в экономии делового человека. <span>Создают достаточный уровень освещённости производственного участка, складского помещения, хранилища и др. объектов. Габариты 370х103х67 мм. Изготавливаются приборы освещения мощностью 30-600 Вт. Световой поток 4150-48000 люмен. Вид крепления — кронштейн, трос, скоба. За детальными данными о товаре, цене обращайтесь к менеджеру на странице. Доступна комплектация данной серии ЕСОNOM (Линза DARCO, блок питания Аргос/MEAN WELL)</span></p>
-                <img class="main-img" src="../assets/nanotechlens-1.png" alt="">
+                
+                <picture>
+                  <source
+                  srcset="../assets/nanotechlens-1.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                srcset="../assets/nanotechlens-1.2.png"
+                media="(max-width: 1200px)"
+              />
+                  <source
+                    srcset="../assets/nanotechlens-1.1.png"
+                    media="(max-width: 1400px)"
+                  />
+                  <img class="main-img" src="../assets/nanotechlens-1.png" alt="">
+                </picture>
             </div>
         </div>
       </section>
@@ -53,7 +100,21 @@
         <div class="container">
             <div class="items-wrapper">
                 <div class="img-wrapper">
+                  <picture>
+                    <source
+                  srcset="../assets/nanotechlens-2.3.png"
+                  media="(max-width: 768px)"
+                />
+                  <source
+                  srcset="../assets/nanotechlens-2.2.png"
+                  media="(max-width: 1200px)"
+                />
+                    <source
+                      srcset="../assets/nanotechlens-2.1.png"
+                      media="(max-width: 1400px)"
+                    />
                     <img src="../assets/nanotechlens-2.png" alt="">
+                  </picture>
                 </div>
                 <div class="item-text">
                     <h2 class="item-name">Nano-Tech 30 lens S</h2>
@@ -92,6 +153,59 @@
                             <li>5 лет </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">30 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">142 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">Аргос ИПС/LEDEK/MLT-PS/MEAN WELL</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л </p>
+                          <ul>
+                            <li>Д – косинусная</li>
+                            <li>Г – глубокая</li>
+                            <li>К – концентрированная</li>
+                            <li>Ш – широкая</li>
+                            <li>Л – полуширокая</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">287*108*67</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">1,5</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Кронштейн/поворотная скоба/на опору/трос</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -100,7 +214,21 @@
             </div>
             <div class="items-wrapper">
                 <div class="img-wrapper">
+                  <picture>
+                    <source
+                  srcset="../assets/nanotechlens-3.3.png"
+                  media="(max-width: 768px)"
+                />
+                  <source
+                  srcset="../assets/nanotechlens-3.2.png"
+                  media="(max-width: 1200px)"
+                />
+                    <source
+                      srcset="../assets/nanotechlens-3.1.png"
+                      media="(max-width: 1400px)"
+                    />
                     <img src="../assets/nanotechlens-3.png" alt="">
+                  </picture>
                 </div>
                 <div class="item-text">
                     <h2 class="item-name">Nano-Tech 50 lens S  </h2>
@@ -131,6 +259,52 @@
                             <li>5 лет </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">50 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">142 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">PHILIPS Xitanium/MEAN WELL/Inventronics</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">403*108*67</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">2,5</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Кронштейн/поворотная скоба/на опору/трос</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -139,7 +313,21 @@
             </div>
             <div class="items-wrapper">
                 <div class="img-wrapper">
+                  <picture>
+                    <source
+                  srcset="../assets/nanotechlens-4.3.png"
+                  media="(max-width: 768px)"
+                />
+                  <source
+                  srcset="../assets/nanotechlens-4.2.png"
+                  media="(max-width: 1200px)"
+                />
+                    <source
+                      srcset="../assets/nanotechlens-4.1.png"
+                      media="(max-width: 1400px)"
+                    />
                     <img src="../assets/nanotechlens-4.png" alt="">
+                  </picture>
                 </div>
                 <div class="item-text">
                     <h2 class="item-name">Nano-Tech 100 lens  </h2>
@@ -170,6 +358,52 @@
                             <li>5 лет </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">100 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">142 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">Аргос ИПС/LEDEK/MLT-PS/MEAN WELL</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">751*108*67</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">4</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Кронштейн/поворотная скоба/на опору/трос</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -178,7 +412,21 @@
             </div>
             <div class="items-wrapper">
                 <div class="img-wrapper">
-                    <img src="../assets/nanotechlens-5.png" alt="">
+                    <picture>
+                      <source
+                  srcset="../assets/nanotechlens-5.3.png"
+                  media="(max-width: 768px)"
+                />
+                    <source
+                    srcset="../assets/nanotechlens-5.2.png"
+                    media="(max-width: 1200px)"
+                  />
+                      <source
+                        srcset="../assets/nanotechlens-5.1.png"
+                        media="(max-width: 1400px)"
+                      />
+                      <img src="../assets/nanotechlens-5.png" alt="">
+                    </picture>
                 </div>
                 <div class="item-text">
                     <h2 class="item-name">Nano-Tech 200 lens S</h2>
@@ -209,6 +457,52 @@
                             <li>5 лет </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">200 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">142 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">Аргос ИПС/LEDEK/MLT-PS/PHILIPS</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">403*413*67</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">7,9</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Кронштейн/поворотная скоба/на опору/трос</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -217,7 +511,21 @@
             </div>
             <div class="items-wrapper">
                 <div class="img-wrapper">
+                  <picture>
+                    <source
+                  srcset="../assets/nanotechlens-6.3.png"
+                  media="(max-width: 768px)"
+                />
+                  <source
+                  srcset="../assets/nanotechlens-6.2.png"
+                  media="(max-width: 1200px)"
+                />
+                    <source
+                      srcset="../assets/nanotechlens-6.1.png"
+                      media="(max-width: 1400px)"
+                    />
                     <img src="../assets/nanotechlens-6.png" alt="">
+                  </picture>
                 </div>
                 <div class="item-text">
                     <h2 class="item-name">Nano-Tech 300 lens</h2>
@@ -248,6 +556,52 @@
                             <li>5 лет </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">300 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">142 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">Аргос ИПС/LEDEK/MLT-PS/PHILIPS</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">751*311*67</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">11,7</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Кронштейн/поворотная скоба/на опору/трос</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -256,7 +610,21 @@
             </div>
             <div class="items-wrapper">
                 <div class="img-wrapper">
+                  <picture>
+                    <source
+                  srcset="../assets/nanotechlens-7.3.png"
+                  media="(max-width: 768px)"
+                />
+                  <source
+                  srcset="../assets/nanotechlens-7.2.png"
+                  media="(max-width: 1200px)"
+                />
+                    <source
+                      srcset="../assets/nanotechlens-7.1.png"
+                      media="(max-width: 1400px)"
+                    />
                     <img src="../assets/nanotechlens-7.png" alt="">
+                  </picture>
                 </div>
                 <div class="item-text">
                     <h2 class="item-name">Nano-Tech 400 lens S</h2>
@@ -287,6 +655,52 @@
                             <li>5 лет </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">400 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">142 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">Аргос ИПС/LEDEK/MLT-PS/PHILIPS</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">751*413*67</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">15,7</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Кронштейн/поворотная скоба/на опору/трос</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -296,7 +710,11 @@
         </div>
       </section>
       <section class="form-section">
-        <img class="form-img1" src="../assets/form-4.png" alt="" />
+        <picture class="form-img1">
+          <source srcset="../assets/form-4.2.png" media="(max-width: 768px)" />
+          <source srcset="../assets/form-4.1.png" media="(max-width: 1200px)" />
+          <img src="../assets/form-4.png" alt="Main img" />
+        </picture>
         <img class="form-img2" src="../assets/form-5.png" alt="" />
         <div class="container">
           <h2 class="title form-title">
@@ -321,7 +739,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-container">
@@ -374,5 +792,84 @@
         </div>
       </div>
     </footer>
+    <footer class="footer-tablet">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div>
+              <div class="logo">
+                <a href="../index.html"
+                  ><img src="../assets/header-logo.svg" alt=""
+                /></a>
+                <p class="logo-desc">Завод светодиодных светильников</p>
+              </div>
+              <p class="footer-address">
+                Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+                Бизнес-Центр "БРИСТОЛЬ")
+              </p>
+              <p class="footer-official">Официальный производитель LEDEK</p>
+              <p class="footer-social">
+                Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+              </p>
+              <div class="footer-dopdesc">
+                <p>ИНН 6163222441</p>
+                <p>КПП 6616301001</p>
+                <p>ОГРН 1216100010059</p>
+              </div>
+              <a class="footer-politics" href=""
+                >Политика конфиденциальных данных</a
+              >
+              <a class="develop" href="">Разработка сайта</a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <a class="footer-tel" href="">+7 800 201 92 69</a>
+            <a class="footer-call" href="">Заказать звонок</a>
+            <a class="footer-mail" href="">sales@ledek.ru</a>
+            <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-mob">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../assets/header-logo.svg" alt=""
+              /></a>
+              <p class="logo-desc">Завод светодиодных светильников</p>
+            </div>
+            <div class="footer-info">
+              <a class="footer-tel" href="">+7 800 201 92 69</a>
+              <a class="footer-call" href="">Заказать звонок</a>
+              <a class="footer-mail" href="">sales@ledek.ru</a>
+              <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-address">
+              Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+              Бизнес-Центр "БРИСТОЛЬ")
+            </p>
+            <p class="footer-official">Официальный производитель LEDEK</p>
+            <p class="footer-social">
+              Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+            </p>
+            <div class="footer-dopdesc">
+              <p>ИНН 6163222441</p>
+              <p>КПП 6616301001</p>
+              <p>ОГРН 1216100010059</p>
+            </div>
+            <a class="footer-politics" href=""
+              >Политика конфиденциальных данных</a
+            >
+            <a class="develop" href="">Разработка сайта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
   </body>
 </html>
