@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="header-desctop">
         <a href="../index.html"
           ><img src="../assets/header-logo.svg" alt=""
         /></a>
@@ -39,217 +39,581 @@
         <a class="tel" href="">+7 800 201 92 69</a>
       </header>
     </div>
+    <header class="header-tablet">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo-wrapper">
+            <img
+              src="../assets/header-logo.svg"
+              alt="Логотип"
+              class="header-logo"
+            />
+            <p class="header-text">Завод светодиодных светильников</p>
+          </div>
+          <div class="contact-info">
+            <a class="tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <a class="mail" href="mailto:sales@ledek.ru">sales@ledek.ru</a>
+          </div>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#">каталог</a></li>
+        <li><a href="#">наши проекты</a></li>
+        <li><a href="#">о компании</a></li>
+        <li><a href="#">отзывы</a></li>
+      </ul>
+    </nav>
     <main>
       <section class="main">
         <div class="container">
-            <div class="main-text">
-                <h1 class="title">Светильник NanoTech</h1>
-                <p class="main-desc">Предназначен для освещения промышленных предприятий, парковок и торгово-выставочных площадей при любых погодных условиях соответствующим климатическому исполнению. <span>Доступна комплектации данной серии на любой бюджет Заказчика: (гарантия от 3-х до 5 -ти лет). Исторически эксплуатируются на объектах более 8 лет. Модульная система проверена временем, простой механизм крепежа. В данном модельном ряде представленны модели от 20 до 400 Ватт. Светильник серии Nano-Tech 50S, 100, 100S, 200 — пользуется повышенным спросом для освещения цехов и складских помещений у конечного пользователя продуктом</span></p>
-                <img class="main-img" src="../assets/nanotech-1.png" alt="">
-            </div>
+          <div class="main-text">
+            <h1 class="title">Светильник NanoTech</h1>
+            <p class="main-desc">
+              Предназначен для освещения промышленных предприятий, парковок
+              и торгово-выставочных площадей при любых погодных условиях
+              соответствующим климатическому исполнению.
+              <span
+                >Доступна комплектации данной серии на любой бюджет Заказчика:
+                (гарантия от 3-х до 5 -ти лет). Исторически эксплуатируются
+                на объектах более 8 лет. Модульная система проверена временем,
+                простой механизм крепежа. В данном модельном ряде представленны
+                модели от 20 до 400 Ватт. Светильник серии Nano-Tech 50S, 100,
+                100S, 200 — пользуется повышенным спросом для освещения цехов
+                и складских помещений у конечного пользователя продуктом</span
+              >
+            </p>
+
+            <picture>
+              <source
+                srcset="../assets/nanotech-1.3.png"
+                media="(max-width: 768px)"
+              />
+              <source
+                srcset="../assets/nanotech-1.2.png"
+                media="(max-width: 1200px)"
+              />
+              <source
+                srcset="../assets/nanotech-1.1.png"
+                media="(max-width: 1400px)"
+              />
+              <img class="main-img" src="../assets/nanotech-1.png" alt="" />
+            </picture>
+          </div>
         </div>
       </section>
       <section class="items">
         <div class="container">
-            <div class="items-wrapper">
-                <div class="img-wrapper">
-                    <img src="../assets/nanotech-2.png" alt="">
-                </div>
-                <div class="item-text">
-                    <h2 class="item-name">Nano-Tech 50 S </h2>
-                    <h3 class="item-desc">Характеристики</h3>
-                    <div class="lists-wrapper">
-                        <ul class="name-list">
-                            <li>Мощность</li>
-                            <li>Энергоэффективность</li>
-                            <li>Драйвер</li>
-                            <li>Светодиоды</li>
-                            <li>КСС</li>
-                            <li>Размеры</li>
-                            <li>Вес</li>
-                            <li>Тип крепления</li>
-                            <li>Температура эксплуатации</li>
-                            <li>Гарантия</li>
-                        </ul>
-                        <ul class="value-list">
-                            <li>50 Вт</li>
-                            <li>142 Лм/Вт</li>
-                            <li>Аргос ИПС/LEDEK/MLT-PS/PHILIPS</li>
-                            <li>OSRAM/Samsung/Seoul Semiconductor/REFOND</li>
-                            <li>Д (120°)</li>
-                            <li>458*83*73</li>
-                            <li>2,7</li>
-                            <li>Консоль</li>
-                            <li>-40°...60°</li>
-                            <li>5 лет </li>
-                        </ul>
-                    </div>
-                    <div class="item-links">
-                        <a class="link" href="">Рассчитать проект</a>
-                        <a class="download" href="">Скачать каталожный лист</a>
-                    </div>
-                </div>
+          <div class="items-wrapper">
+            <div class="img-wrapper">
+              <picture>
+                <source
+                  srcset="../assets/nanotech-2.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="../assets/nanotech-2.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="../assets/nanotech-2.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="../assets/nanotech-2.png" alt="" />
+              </picture>
             </div>
-            <div class="items-wrapper">
-                <div class="img-wrapper">
-                    <img src="../assets/nanotech-3.png" alt="">
-                </div>
-                <div class="item-text">
-                    <h2 class="item-name">Nano-Tech 100 </h2>
-                    <h3 class="item-desc">Характеристики</h3>
-                    <div class="lists-wrapper">
-                        <ul class="name-list">
-                            <li>Мощность</li>
-                            <li>Энергоэффективность</li>
-                            <li>Драйвер</li>
-                            <li>Светодиоды</li>
-                            <li>КСС</li>
-                            <li>Размеры</li>
-                            <li>Вес</li>
-                            <li>Тип крепления</li>
-                            <li>Температура эксплуатации</li>
-                            <li>Гарантия</li>
-                        </ul>
-                        <ul class="value-list">
-                            <li>100 Вт</li>
-                            <li>142 Лм/Вт</li>
-                            <li>Аргос ИПС/LEDEK/MLT-PS/PHILIPS</li>
-                            <li>OSRAM/Samsung/Seoul Semiconductor/REFOND</li>
-                            <li>Д (120°)</li>
-                            <li>858*83*73</li>
-                            <li>3,9</li>
-                            <li>Консоль</li>
-                            <li>-40°...60°</li>
-                            <li>5 лет </li>
-                        </ul>
-                    </div>
-                    <div class="item-links">
-                        <a class="link" href="">Рассчитать проект</a>
-                        <a class="download" href="">Скачать каталожный лист</a>
-                    </div>
-                </div>
+            <div class="item-text">
+              <h2 class="item-name">Nano-Tech 50 S</h2>
+              <h3 class="item-desc">Характеристики</h3>
+              <div class="lists-wrapper">
+                <ul class="name-list">
+                  <li>Мощность</li>
+                  <li>Энергоэффективность</li>
+                  <li>Драйвер</li>
+                  <li>Светодиоды</li>
+                  <li>КСС</li>
+                  <li>Размеры</li>
+                  <li>Вес</li>
+                  <li>Тип крепления</li>
+                  <li>Температура эксплуатации</li>
+                  <li>Гарантия</li>
+                </ul>
+                <ul class="value-list">
+                  <li>50 Вт</li>
+                  <li>142 Лм/Вт</li>
+                  <li>Аргос ИПС/LEDEK/MLT-PS/PHILIPS</li>
+                  <li>OSRAM/Samsung/Seoul Semiconductor/REFOND</li>
+                  <li>Д (120°)</li>
+                  <li>458*83*73</li>
+                  <li>2,7</li>
+                  <li>Консоль</li>
+                  <li>-40°...60°</li>
+                  <li>5 лет</li>
+                </ul>
+              </div>
+              <div class="lists-wrapper-mob">
+                <ul class="mob-list">
+                  <li>
+                    <span class="mob-name">Мощность</span>
+                    <p class="mob-desc">50 Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Энергоэффективность</span>
+                    <p class="mob-desc">142 Лм/Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Драйвер</span>
+                    <p class="mob-desc">Аргос ИПС/LEDEK/<br />MLT-PS/PHILIPS</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Светодиоды</span>
+                    <p class="mob-desc">
+                      OSRAM/Samsung/Seoul Semiconductor/REFOND
+                    </p>
+                  </li>
+                  <li>
+                    <span class="mob-name">КСС</span>
+                    <p class="mob-desc">Д (120°)</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Размеры</span>
+                    <p class="mob-desc">458*83*73</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Вес</span>
+                    <p class="mob-desc">2,7</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип крепления</span>
+                    <p class="mob-desc">Консоль</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Температура эксплуатации</span>
+                    <p class="mob-desc">-40°...60°</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Гарантия</span>
+                    <p class="mob-desc">5 лет</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="item-links">
+                <a class="link" href="">Рассчитать проект</a>
+                <a class="download" href="">Скачать каталожный лист</a>
+              </div>
             </div>
-            <div class="items-wrapper">
-                <div class="img-wrapper">
-                    <img src="../assets/nanotech-4.png" alt="">
-                </div>
-                <div class="item-text">
-                    <h2 class="item-name">Nano-Tech 100 S </h2>
-                    <h3 class="item-desc">Характеристики</h3>
-                    <div class="lists-wrapper">
-                        <ul class="name-list">
-                            <li>Мощность</li>
-                            <li>Энергоэффективность</li>
-                            <li>Драйвер</li>
-                            <li>Светодиоды</li>
-                            <li>КСС</li>
-                            <li>Размеры</li>
-                            <li>Вес</li>
-                            <li>Тип крепления</li>
-                            <li>Температура эксплуатации</li>
-                            <li>Гарантия</li>
-                        </ul>
-                        <ul class="value-list">
-                            <li>100 Вт</li>
-                            <li>142 Лм/Вт</li>
-                            <li>Аргос ИПС/LEDEK/MLT-PS/PHILIPS</li>
-                            <li>OSRAM/Samsung/Seoul Semiconductor/REFOND</li>
-                            <li>Д (120°)</li>
-                            <li>858*83*73</li>
-                            <li>3,9</li>
-                            <li>Консоль</li>
-                            <li>-40°...60°</li>
-                            <li>5 лет </li>
-                        </ul>
-                    </div>
-                    <div class="item-links">
-                        <a class="link" href="">Рассчитать проект</a>
-                        <a class="download" href="">Скачать каталожный лист</a>
-                    </div>
-                </div>
+          </div>
+          <div class="items-wrapper">
+            <div class="img-wrapper">
+              <picture>
+                <source
+                  srcset="../assets/nanotech-3.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="../assets/nanotech-3.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="../assets/nanotech-3.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="../assets/nanotech-3.png" alt="" />
+              </picture>
             </div>
-            <div class="items-wrapper">
-                <div class="img-wrapper">
-                    <img src="../assets/nanotech-5.png" alt="">
-                </div>
-                <div class="item-text">
-                    <h2 class="item-name">Nano-Tech 150 S </h2>
-                    <h3 class="item-desc">Характеристики</h3>
-                    <div class="lists-wrapper">
-                        <ul class="name-list">
-                            <li>Мощность</li>
-                            <li>Энергоэффективность</li>
-                            <li>Драйвер</li>
-                            <li>Светодиоды</li>
-                            <li>КСС</li>
-                            <li>Размеры</li>
-                            <li>Вес</li>
-                            <li>Тип крепления</li>
-                            <li>Температура эксплуатации</li>
-                            <li>Гарантия</li>
-                        </ul>
-                        <ul class="value-list">
-                            <li>150 Вт</li>
-                            <li>142 Лм/Вт</li>
-                            <li>Аргос ИПС/LEDEK/MLT-PS/PHILIPS</li>
-                            <li>OSRAM/Samsung/Seoul Semiconductor/REFOND</li>
-                            <li>120°Д (120°)</li>
-                            <li>458*239*73</li>
-                            <li>5,7</li>
-                            <li>Консоль</li>
-                            <li>-40°...60°</li>
-                            <li>5 лет </li>
-                        </ul>
-                    </div>
-                    <div class="item-links">
-                        <a class="link" href="">Рассчитать проект</a>
-                        <a class="download" href="">Скачать каталожный лист</a>
-                    </div>
-                </div>
+            <div class="item-text">
+              <h2 class="item-name">Nano-Tech 100</h2>
+              <h3 class="item-desc">Характеристики</h3>
+              <div class="lists-wrapper">
+                <ul class="name-list">
+                  <li>Мощность</li>
+                  <li>Энергоэффективность</li>
+                  <li>Драйвер</li>
+                  <li>Светодиоды</li>
+                  <li>КСС</li>
+                  <li>Размеры</li>
+                  <li>Вес</li>
+                  <li>Тип крепления</li>
+                  <li>Температура эксплуатации</li>
+                  <li>Гарантия</li>
+                </ul>
+                <ul class="value-list">
+                  <li>100 Вт</li>
+                  <li>142 Лм/Вт</li>
+                  <li>Аргос ИПС/LEDEK/MLT-PS/PHILIPS</li>
+                  <li>OSRAM/Samsung/Seoul Semiconductor/REFOND</li>
+                  <li>Д (120°)</li>
+                  <li>858*83*73</li>
+                  <li>3,9</li>
+                  <li>Консоль</li>
+                  <li>-40°...60°</li>
+                  <li>5 лет</li>
+                </ul>
+              </div>
+              <div class="lists-wrapper-mob">
+                <ul class="mob-list">
+                  <li>
+                    <span class="mob-name">Мощность</span>
+                    <p class="mob-desc">100 Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Энергоэффективность</span>
+                    <p class="mob-desc">142 Лм/Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Драйвер</span>
+                    <p class="mob-desc">Аргос ИПС/LEDEK/<br />MLT-PS/PHILIPS</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Светодиоды</span>
+                    <p class="mob-desc">
+                      OSRAM/Samsung/Seoul Semiconductor/REFOND
+                    </p>
+                  </li>
+                  <li>
+                    <span class="mob-name">КСС</span>
+                    <p class="mob-desc">Д (120°)</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Размеры</span>
+                    <p class="mob-desc">858*83*73</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Вес</span>
+                    <p class="mob-desc">3,9</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип крепления</span>
+                    <p class="mob-desc">Консоль</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Температура эксплуатации</span>
+                    <p class="mob-desc">-40°...60°</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Гарантия</span>
+                    <p class="mob-desc">5 лет</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="item-links">
+                <a class="link" href="">Рассчитать проект</a>
+                <a class="download" href="">Скачать каталожный лист</a>
+              </div>
             </div>
-            <div class="items-wrapper">
-                <div class="img-wrapper">
-                    <img src="../assets/nanotech-6.png" alt="">
-                </div>
-                <div class="item-text">
-                    <h2 class="item-name">Nano-Tech 200 </h2>
-                    <h3 class="item-desc">Характеристики</h3>
-                    <div class="lists-wrapper">
-                        <ul class="name-list">
-                            <li>Мощность</li>
-                            <li>Энергоэффективность</li>
-                            <li>Драйвер</li>
-                            <li>Светодиоды</li>
-                            <li>КСС</li>
-                            <li>Размеры</li>
-                            <li>Вес</li>
-                            <li>Тип крепления</li>
-                            <li>Температура эксплуатации</li>
-                            <li>Гарантия</li>
-                        </ul>
-                        <ul class="value-list">
-                            <li>100 Вт</li>
-                            <li>142 Лм/Вт</li>
-                            <li>Аргос ИПС/LEDEK/MLT-PS/PHILIPS</li>
-                            <li>OSRAM/Samsung/Seoul Semiconductor/REFOND</li>
-                            <li>Д (120°)</li>
-                            <li>858*161*73</li>
-                            <li>7,4</li>
-                            <li>Консоль</li>
-                            <li>-40°...60°</li>
-                            <li>5 лет </li>
-                        </ul>
-                    </div>
-                    <div class="item-links">
-                        <a class="link" href="">Рассчитать проект</a>
-                        <a class="download" href="">Скачать каталожный лист</a>
-                    </div>
-                </div>
+          </div>
+          <div class="items-wrapper">
+            <div class="img-wrapper">
+              <picture>
+                <source
+                  srcset="../assets/nanotech-4.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="../assets/nanotech-4.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="../assets/nanotech-4.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="../assets/nanotech-4.png" alt="" />
+              </picture>
             </div>
+            <div class="item-text">
+              <h2 class="item-name">Nano-Tech 100 S</h2>
+              <h3 class="item-desc">Характеристики</h3>
+              <div class="lists-wrapper">
+                <ul class="name-list">
+                  <li>Мощность</li>
+                  <li>Энергоэффективность</li>
+                  <li>Драйвер</li>
+                  <li>Светодиоды</li>
+                  <li>КСС</li>
+                  <li>Размеры</li>
+                  <li>Вес</li>
+                  <li>Тип крепления</li>
+                  <li>Температура эксплуатации</li>
+                  <li>Гарантия</li>
+                </ul>
+                <ul class="value-list">
+                  <li>100 Вт</li>
+                  <li>142 Лм/Вт</li>
+                  <li>Аргос ИПС/LEDEK/MLT-PS/PHILIPS</li>
+                  <li>OSRAM/Samsung/Seoul Semiconductor/REFOND</li>
+                  <li>Д (120°)</li>
+                  <li>858*83*73</li>
+                  <li>3,9</li>
+                  <li>Консоль</li>
+                  <li>-40°...60°</li>
+                  <li>5 лет</li>
+                </ul>
+              </div>
+              <div class="lists-wrapper-mob">
+                <ul class="mob-list">
+                  <li>
+                    <span class="mob-name">Мощность</span>
+                    <p class="mob-desc">100 Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Энергоэффективность</span>
+                    <p class="mob-desc">142 Лм/Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Драйвер</span>
+                    <p class="mob-desc">Аргос ИПС/LEDEK/<br />MLT-PS/PHILIPS</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Светодиоды</span>
+                    <p class="mob-desc">
+                      OSRAM/Samsung/Seoul Semiconductor/REFOND
+                    </p>
+                  </li>
+                  <li>
+                    <span class="mob-name">КСС</span>
+                    <p class="mob-desc">Д (120°)</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Размеры</span>
+                    <p class="mob-desc">858*83*73</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Вес</span>
+                    <p class="mob-desc">3,9</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип крепления</span>
+                    <p class="mob-desc">Консоль</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Температура эксплуатации</span>
+                    <p class="mob-desc">-40°...60°</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Гарантия</span>
+                    <p class="mob-desc">5 лет</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="item-links">
+                <a class="link" href="">Рассчитать проект</a>
+                <a class="download" href="">Скачать каталожный лист</a>
+              </div>
+            </div>
+          </div>
+          <div class="items-wrapper">
+            <div class="img-wrapper">
+              <picture>
+                <source
+                  srcset="../assets/nanotech-5.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="../assets/nanotech-5.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="../assets/nanotech-5.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="../assets/nanotech-5.png" alt="" />
+              </picture>
+            </div>
+            <div class="item-text">
+              <h2 class="item-name">Nano-Tech 150 S</h2>
+              <h3 class="item-desc">Характеристики</h3>
+              <div class="lists-wrapper">
+                <ul class="name-list">
+                  <li>Мощность</li>
+                  <li>Энергоэффективность</li>
+                  <li>Драйвер</li>
+                  <li>Светодиоды</li>
+                  <li>КСС</li>
+                  <li>Размеры</li>
+                  <li>Вес</li>
+                  <li>Тип крепления</li>
+                  <li>Температура эксплуатации</li>
+                  <li>Гарантия</li>
+                </ul>
+                <ul class="value-list">
+                  <li>150 Вт</li>
+                  <li>142 Лм/Вт</li>
+                  <li>Аргос ИПС/LEDEK/MLT-PS/PHILIPS</li>
+                  <li>OSRAM/Samsung/Seoul Semiconductor/REFOND</li>
+                  <li>120°Д (120°)</li>
+                  <li>458*239*73</li>
+                  <li>5,7</li>
+                  <li>Консоль</li>
+                  <li>-40°...60°</li>
+                  <li>5 лет</li>
+                </ul>
+              </div>
+              <div class="lists-wrapper-mob">
+                <ul class="mob-list">
+                  <li>
+                    <span class="mob-name">Мощность</span>
+                    <p class="mob-desc">150 Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Энергоэффективность</span>
+                    <p class="mob-desc">142 Лм/Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Драйвер</span>
+                    <p class="mob-desc">Аргос ИПС/LEDEK/<br />MLT-PS/PHILIPS</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Светодиоды</span>
+                    <p class="mob-desc">
+                      OSRAM/Samsung/Seoul Semiconductor/REFOND
+                    </p>
+                  </li>
+                  <li>
+                    <span class="mob-name">КСС</span>
+                    <p class="mob-desc">Д (120°)</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Размеры</span>
+                    <p class="mob-desc">458*239*73</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Вес</span>
+                    <p class="mob-desc">5,7</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип крепления</span>
+                    <p class="mob-desc">Консоль</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Температура эксплуатации</span>
+                    <p class="mob-desc">-40°...60°</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Гарантия</span>
+                    <p class="mob-desc">5 лет</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="item-links">
+                <a class="link" href="">Рассчитать проект</a>
+                <a class="download" href="">Скачать каталожный лист</a>
+              </div>
+            </div>
+          </div>
+          <div class="items-wrapper">
+            <div class="img-wrapper">
+              <picture>
+                <source
+                  srcset="../assets/nanotech-6.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="../assets/nanotech-6.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="../assets/nanotech-6.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="../assets/nanotech-6.png" alt="" />
+              </picture>
+            </div>
+            <div class="item-text">
+              <h2 class="item-name">Nano-Tech 200</h2>
+              <h3 class="item-desc">Характеристики</h3>
+              <div class="lists-wrapper">
+                <ul class="name-list">
+                  <li>Мощность</li>
+                  <li>Энергоэффективность</li>
+                  <li>Драйвер</li>
+                  <li>Светодиоды</li>
+                  <li>КСС</li>
+                  <li>Размеры</li>
+                  <li>Вес</li>
+                  <li>Тип крепления</li>
+                  <li>Температура эксплуатации</li>
+                  <li>Гарантия</li>
+                </ul>
+                <ul class="value-list">
+                  <li>100 Вт</li>
+                  <li>142 Лм/Вт</li>
+                  <li>Аргос ИПС/LEDEK/MLT-PS/PHILIPS</li>
+                  <li>OSRAM/Samsung/Seoul Semiconductor/REFOND</li>
+                  <li>Д (120°)</li>
+                  <li>858*161*73</li>
+                  <li>7,4</li>
+                  <li>Консоль</li>
+                  <li>-40°...60°</li>
+                  <li>5 лет</li>
+                </ul>
+              </div>
+              <div class="lists-wrapper-mob">
+                <ul class="mob-list">
+                  <li>
+                    <span class="mob-name">Мощность</span>
+                    <p class="mob-desc">100 Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Энергоэффективность</span>
+                    <p class="mob-desc">142 Лм/Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Драйвер</span>
+                    <p class="mob-desc">Аргос ИПС/LEDEK/<br />MLT-PS/PHILIPS</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Светодиоды</span>
+                    <p class="mob-desc">
+                      OSRAM/Samsung/Seoul Semiconductor/REFOND
+                    </p>
+                  </li>
+                  <li>
+                    <span class="mob-name">КСС</span>
+                    <p class="mob-desc">Д (120°)</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Размеры</span>
+                    <p class="mob-desc">858*161*73</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Вес</span>
+                    <p class="mob-desc">7,4</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип крепления</span>
+                    <p class="mob-desc">Консоль</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Температура эксплуатации</span>
+                    <p class="mob-desc">-40°...60°</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Гарантия</span>
+                    <p class="mob-desc">5 лет</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="item-links">
+                <a class="link" href="">Рассчитать проект</a>
+                <a class="download" href="">Скачать каталожный лист</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="form-section">
-        <img class="form-img1" src="../assets/form-4.png" alt="" />
+        <picture class="form-img1">
+          <source srcset="../assets/form-4.2.png" media="(max-width: 768px)" />
+          <source srcset="../assets/form-4.1.png" media="(max-width: 1200px)" />
+          <img src="../assets/form-4.png" alt="Main img" />
+        </picture>
         <img class="form-img2" src="../assets/form-5.png" alt="" />
         <div class="container">
           <h2 class="title form-title">
@@ -274,7 +638,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-container">
@@ -327,5 +691,84 @@
         </div>
       </div>
     </footer>
+    <footer class="footer-tablet">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div>
+              <div class="logo">
+                <a href="../index.html"
+                  ><img src="../assets/header-logo.svg" alt=""
+                /></a>
+                <p class="logo-desc">Завод светодиодных светильников</p>
+              </div>
+              <p class="footer-address">
+                Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+                Бизнес-Центр "БРИСТОЛЬ")
+              </p>
+              <p class="footer-official">Официальный производитель LEDEK</p>
+              <p class="footer-social">
+                Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+              </p>
+              <div class="footer-dopdesc">
+                <p>ИНН 6163222441</p>
+                <p>КПП 6616301001</p>
+                <p>ОГРН 1216100010059</p>
+              </div>
+              <a class="footer-politics" href=""
+                >Политика конфиденциальных данных</a
+              >
+              <a class="develop" href="">Разработка сайта</a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <a class="footer-tel" href="">+7 800 201 92 69</a>
+            <a class="footer-call" href="">Заказать звонок</a>
+            <a class="footer-mail" href="">sales@ledek.ru</a>
+            <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-mob">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../assets/header-logo.svg" alt=""
+              /></a>
+              <p class="logo-desc">Завод светодиодных светильников</p>
+            </div>
+            <div class="footer-info">
+              <a class="footer-tel" href="">+7 800 201 92 69</a>
+              <a class="footer-call" href="">Заказать звонок</a>
+              <a class="footer-mail" href="">sales@ledek.ru</a>
+              <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-address">
+              Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+              Бизнес-Центр "БРИСТОЛЬ")
+            </p>
+            <p class="footer-official">Официальный производитель LEDEK</p>
+            <p class="footer-social">
+              Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+            </p>
+            <div class="footer-dopdesc">
+              <p>ИНН 6163222441</p>
+              <p>КПП 6616301001</p>
+              <p>ОГРН 1216100010059</p>
+            </div>
+            <a class="footer-politics" href=""
+              >Политика конфиденциальных данных</a
+            >
+            <a class="develop" href="">Разработка сайта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
   </body>
 </html>

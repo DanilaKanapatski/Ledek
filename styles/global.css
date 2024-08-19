@@ -67,7 +67,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .container {
-    padding: 0 40px;
+    max-width: 688px;
   }
 
   .title {
