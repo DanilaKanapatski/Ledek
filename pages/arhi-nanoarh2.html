@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="header-desctop">
         <a href="../index.html"
           ><img src="../assets/header-logo.svg" alt=""
         /></a>
@@ -39,12 +39,44 @@
         <a class="tel" href="">+7 800 201 92 69</a>
       </header>
     </div>
+    <header class="header-tablet">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo-wrapper">
+            <img
+              src="../assets/header-logo.svg"
+              alt="Логотип"
+              class="header-logo"
+            />
+            <p class="header-text">Завод светодиодных светильников</p>
+          </div>
+          <div class="contact-info">
+            <a class="tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <a class="mail" href="mailto:sales@ledek.ru">sales@ledek.ru</a>
+          </div>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#">каталог</a></li>
+        <li><a href="#">наши проекты</a></li>
+        <li><a href="#">о компании</a></li>
+        <li><a href="#">отзывы</a></li>
+      </ul>
+    </nav>
     <main>
       <section class="main">
         <div class="container">
             <div class="main-text">
                 <h1 class="title">Светильники Nano-ARH 2</h1>
-                <p class="main-desc">Архитектурные светодиодные светильники серии Nano-Grunt созданы для декоративной ландшафтной подсветки </p>
+                <!-- <p class="main-desc">Архитектурные светодиодные светильники серии Nano-Grunt созданы для декоративной ландшафтной подсветки </p> -->
                 <!-- <img class="main-img" src="../assets/arhi-nanogrunt-1.png" alt=""> -->
             </div>
         </div>
@@ -141,7 +173,11 @@
         </div>
       </section>
       <section class="form-section">
-        <img class="form-img1" src="../assets/form-4.png" alt="" />
+        <picture class="form-img1">
+          <source srcset="../assets/form-4.2.png" media="(max-width: 768px)" />
+          <source srcset="../assets/form-4.1.png" media="(max-width: 1200px)" />
+          <img src="../assets/form-4.png" alt="Main img" />
+        </picture>
         <img class="form-img2" src="../assets/form-5.png" alt="" />
         <div class="container">
           <h2 class="title form-title">
@@ -166,7 +202,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-container">
@@ -219,5 +255,84 @@
         </div>
       </div>
     </footer>
+    <footer class="footer-tablet">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div>
+              <div class="logo">
+                <a href="../index.html"
+                  ><img src="../assets/header-logo.svg" alt=""
+                /></a>
+                <p class="logo-desc">Завод светодиодных светильников</p>
+              </div>
+              <p class="footer-address">
+                Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+                Бизнес-Центр "БРИСТОЛЬ")
+              </p>
+              <p class="footer-official">Официальный производитель LEDEK</p>
+              <p class="footer-social">
+                Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+              </p>
+              <div class="footer-dopdesc">
+                <p>ИНН 6163222441</p>
+                <p>КПП 6616301001</p>
+                <p>ОГРН 1216100010059</p>
+              </div>
+              <a class="footer-politics" href=""
+                >Политика конфиденциальных данных</a
+              >
+              <a class="develop" href="">Разработка сайта</a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <a class="footer-tel" href="">+7 800 201 92 69</a>
+            <a class="footer-call" href="">Заказать звонок</a>
+            <a class="footer-mail" href="">sales@ledek.ru</a>
+            <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-mob">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../assets/header-logo.svg" alt=""
+              /></a>
+              <p class="logo-desc">Завод светодиодных светильников</p>
+            </div>
+            <div class="footer-info">
+              <a class="footer-tel" href="">+7 800 201 92 69</a>
+              <a class="footer-call" href="">Заказать звонок</a>
+              <a class="footer-mail" href="">sales@ledek.ru</a>
+              <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-address">
+              Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+              Бизнес-Центр "БРИСТОЛЬ")
+            </p>
+            <p class="footer-official">Официальный производитель LEDEK</p>
+            <p class="footer-social">
+              Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+            </p>
+            <div class="footer-dopdesc">
+              <p>ИНН 6163222441</p>
+              <p>КПП 6616301001</p>
+              <p>ОГРН 1216100010059</p>
+            </div>
+            <a class="footer-politics" href=""
+              >Политика конфиденциальных данных</a
+            >
+            <a class="develop" href="">Разработка сайта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
   </body>
 </html>

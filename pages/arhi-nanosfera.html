@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="header-desctop">
         <a href="../index.html"
           ><img src="../assets/header-logo.svg" alt=""
         /></a>
@@ -39,13 +39,60 @@
         <a class="tel" href="">+7 800 201 92 69</a>
       </header>
     </div>
+    <header class="header-tablet">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo-wrapper">
+            <img
+              src="../assets/header-logo.svg"
+              alt="Логотип"
+              class="header-logo"
+            />
+            <p class="header-text">Завод светодиодных светильников</p>
+          </div>
+          <div class="contact-info">
+            <a class="tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <a class="mail" href="mailto:sales@ledek.ru">sales@ledek.ru</a>
+          </div>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#">каталог</a></li>
+        <li><a href="#">наши проекты</a></li>
+        <li><a href="#">о компании</a></li>
+        <li><a href="#">отзывы</a></li>
+      </ul>
+    </nav>
     <main>
       <section class="main">
         <div class="container">
             <div class="main-text">
-                <h1 class="title">Светильники Nano-Sfera</h1>
+                <h1 class="title">Светильник Nano-Sfera</h1>
                 <p class="main-desc">Светильник Nano-Sfera  преднзначен  для произведственного освещения и промышленных территорий,  открытых площадок, высоких пролетов, ж/д путей, складов и прочее. <span>В особых случаях эксплуатации допустим режим +70°С. Модели «Nano-Sfera»: алюминиевый корпус без рёбер охлаждения (обеспечивает чистоту прибора). Конструкция предотвращает образование наледи при уличном использовании. Теплоотвод за счет толстой металлической стенки и конвекционных отверстий. Корпус с полимерным покрытием обеспечивает дополнительную антикоррозийную защиту. Повышенная защита от влаги и пыли IP67 без силикона. Конструкция подходит для монтажа на высоту 10-36 метров. Гарантия на оборудование от компании: от 5 до 7 лет</span></p>
-                <img class="main-img" src="../assets/arhi-nanosfera-1.png" alt="">
+                
+                <picture>
+                  <source
+                    srcset="../assets/arhi-nanosfera-1.3.png"
+                    media="(max-width: 768px)"
+                  />
+                  <source
+                    srcset="../assets/arhi-nanosfera-1.2.png"
+                    media="(max-width: 1200px)"
+                  />
+                  <source
+                    srcset="../assets/arhi-nanosfera-1.1.png"
+                    media="(max-width: 1400px)"
+                  />
+                  <img class="main-img" src="../assets/arhi-nanosfera-1.png" alt="">
+                </picture>
             </div>
         </div>
       </section>
@@ -53,7 +100,21 @@
         <div class="container">
             <div class="items-wrapper">
                 <div class="img-wrapper">
+                  <picture>
+                    <source
+                      srcset="../assets/arhi-nanosfera-2.3.png"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="../assets/arhi-nanosfera-2.2.png"
+                      media="(max-width: 1200px)"
+                    />
+                    <source
+                      srcset="../assets/arhi-nanosfera-2.1.png"
+                      media="(max-width: 1400px)"
+                    />
                     <img src="../assets/arhi-nanosfera-2.png" alt="">
+                  </picture>
                 </div>
                 <div class="item-text">
                     <h2 class="item-name">Nano-Sfera 120 </h2>
@@ -92,6 +153,59 @@
                             <li>5 лет </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">120 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">156 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">PHILIPS Xitanium/MEAN WELL/Inventronics</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л </p>
+                          <ul>
+                            <li>Д – косинусная</li>
+                            <li>Г – глубокая</li>
+                            <li>К – концентрированная</li>
+                            <li>Ш – широкая</li>
+                            <li>Л – полуширокая</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">380*179*112</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">4,1</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Кронштейн/поворотная скоба/на опору/трос</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -100,7 +214,21 @@
             </div>
             <div class="items-wrapper">
                 <div class="img-wrapper">
+                  <picture>
+                    <source
+                      srcset="../assets/arhi-nanosfera-3.3.png"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="../assets/arhi-nanosfera-3.2.png"
+                      media="(max-width: 1200px)"
+                    />
+                    <source
+                      srcset="../assets/arhi-nanosfera-3.1.png"
+                      media="(max-width: 1400px)"
+                    />
                     <img src="../assets/arhi-nanosfera-3.png" alt="">
+                  </picture>
                 </div>
                 <div class="item-text">
                     <h2 class="item-name">Nano-Sfera 180  </h2>
@@ -133,6 +261,52 @@
                             <li>5 лет </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">180 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">156 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">PHILIPS Xitanium/MEAN WELL/Inventronics</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">540*179*112</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">6,2</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Кронштейн/поворотная скоба/на опору/трос</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -141,7 +315,21 @@
             </div>
             <div class="items-wrapper">
                 <div class="img-wrapper">
+                  <picture>
+                    <source
+                      srcset="../assets/arhi-nanosfera-4.3.png"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="../assets/arhi-nanosfera-4.2.png"
+                      media="(max-width: 1200px)"
+                    />
+                    <source
+                      srcset="../assets/arhi-nanosfera-4.1.png"
+                      media="(max-width: 1400px)"
+                    />
                     <img src="../assets/arhi-nanosfera-4.png" alt="">
+                  </picture>
                 </div>
                 <div class="item-text">
                     <h2 class="item-name">Nano-Sfera 240 </h2>
@@ -174,6 +362,52 @@
                             <li>5 лет </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">240 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">156 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">PHILIPS Xitanium/MEAN WELL/Inventronics</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">700*17*112</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">7,9</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Кронштейн/поворотная скоба/на опору/трос</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -182,7 +416,21 @@
             </div>
             <div class="items-wrapper">
                 <div class="img-wrapper">
+                  <picture>
+                    <source
+                      srcset="../assets/arhi-nanosfera-5.3.png"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="../assets/arhi-nanosfera-5.2.png"
+                      media="(max-width: 1200px)"
+                    />
+                    <source
+                      srcset="../assets/arhi-nanosfera-5.1.png"
+                      media="(max-width: 1400px)"
+                    />
                     <img src="../assets/arhi-nanosfera-5.png" alt="">
+                  </picture>
                 </div>
                 <div class="item-text">
                     <h2 class="item-name">Nano-Sfera 360</h2>
@@ -215,6 +463,52 @@
                             <li>5 лет </li>
                         </ul>
                     </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">360 Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Энергоэффективность</span>
+                          <p class="mob-desc">156 Лм/Вт</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Драйвер</span>
+                          <p class="mob-desc">PHILIPS Xitanium/MEAN WELL/Inventronics</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Светодиоды</span>
+                          <p class="mob-desc">
+                            OSRAM/Samsung/Seoul Semiconductor/REFOND
+                          </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">КСС</span>
+                          <p class="mob-desc">Д/Г/К/Ш/Л </p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc">540*364*112</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Вес</span>
+                          <p class="mob-desc">13,8</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Тип крепления</span>
+                          <p class="mob-desc">Кронштейн/поворотная скоба/на опору/трос</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Температура эксплуатации</span>
+                          <p class="mob-desc">-40°...60°</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Гарантия</span>
+                          <p class="mob-desc">5 лет</p>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="item-links">
                         <a class="link" href="">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
@@ -224,7 +518,11 @@
         </div>
       </section>
       <section class="form-section">
-        <img class="form-img1" src="../assets/form-4.png" alt="" />
+        <picture class="form-img1">
+          <source srcset="../assets/form-4.2.png" media="(max-width: 768px)" />
+          <source srcset="../assets/form-4.1.png" media="(max-width: 1200px)" />
+          <img src="../assets/form-4.png" alt="Main img" />
+        </picture>
         <img class="form-img2" src="../assets/form-5.png" alt="" />
         <div class="container">
           <h2 class="title form-title">
@@ -249,47 +547,105 @@
         </div>
       </section>
     </main>
-    <footer>
+    <section class="form-section">
+      <picture class="form-img1">
+        <source srcset="../assets/form-4.2.png" media="(max-width: 768px)" />
+        <source srcset="../assets/form-4.1.png" media="(max-width: 1200px)" />
+        <img src="../assets/form-4.png" alt="Main img" />
+      </picture>
+      <img class="form-img2" src="../assets/form-5.png" alt="" />
       <div class="container">
-        <div class="footer-wrapper">
-          <div class="footer-container">
-            <div>
-              <div class="logo">
-                <a href="../index.html"
-                  ><img src="../assets/header-logo.svg" alt=""
-                /></a>
-                <p class="logo-desc">Завод светодиодных светильников</p>
-              </div>
-              <p class="footer-address">
-                Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
-                Бизнес-Центр "БРИСТОЛЬ")
-              </p>
-              <p class="footer-official">Официальный производитель LEDEK</p>
-              <a class="footer-politics" href=""
-                >Политика конфиденциальных данных</a
-              >
+        <h2 class="title form-title">
+          Получите <span>бесплатный</span> профессиональный светотехнический
+          расчёт
+        </h2>
+        <ul class="form-list">
+          <li class="list-one">Сделаем светотехнический проект</li>
+          <li class="list-two">Укажем реальные цифры в расчётах</li>
+          <li class="list-three">
+            Сделаем по нормам и стандартам светотехники
+          </li>
+        </ul>
+        <form action="">
+          <input placeholder="Ваш телефон" type="tel" />
+          <button class="link form-btn" type="submit">Получить</button>
+        </form>
+        <p class="form-politics">
+          Заполняя форму вы соглашаетесь с
+          <a href="">политикой конфиденциальности</a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-container">
+          <div>
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../assets/header-logo.svg" alt=""
+              /></a>
+              <p class="logo-desc">Завод светодиодных светильников</p>
             </div>
-            <div class="footer-lists">
-              <ul class="footer-list">
-                <h4>Услуги</h4>
-                <li>Монтаж</li>
-                <li>Подбор корпуса в RAL  </li>
-                <li>ЭнергоАрбитраж</li>
-                <li>Светильника на заказ</li>
-              </ul>
-              <ul class="footer-links">
-                <li>Каталог</li>
-                <li>Наши проекты</li>
-                <li>О компании</li>
-                <li>Отзывы</li>
-              </ul>
-            </div>
+            <p class="footer-address">
+              Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+              Бизнес-Центр "БРИСТОЛЬ")
+            </p>
+            <p class="footer-official">Официальный производитель LEDEK</p>
+            <a class="footer-politics" href=""
+              >Политика конфиденциальных данных</a
+            >
           </div>
-          <div class="footer-info">
-            <a class="footer-tel" href="">+7 800 201 92 69</a>
-            <a class="footer-call" href="">Заказать звонок</a>
-            <a class="footer-mail" href="">sales@ledek.ru</a>
-            <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+          <div class="footer-lists">
+            <ul class="footer-list">
+              <h4>Услуги</h4>
+              <li>Монтаж</li>
+              <li>Подбор корпуса в RAL  </li>
+              <li>ЭнергоАрбитраж</li>
+              <li>Светильника на заказ</li>
+            </ul>
+            <ul class="footer-links">
+              <li>Каталог</li>
+              <li>Наши проекты</li>
+              <li>О компании</li>
+              <li>Отзывы</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-info">
+          <a class="footer-tel" href="">+7 800 201 92 69</a>
+          <a class="footer-call" href="">Заказать звонок</a>
+          <a class="footer-mail" href="">sales@ledek.ru</a>
+          <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+          <p class="footer-social">
+            Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+          </p>
+          <div class="footer-dopdesc">
+            <p>ИНН 6163222441</p>
+            <p>КПП 6616301001</p>
+            <p>ОГРН 1216100010059</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer-tablet">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-container">
+          <div>
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../assets/header-logo.svg" alt=""
+              /></a>
+              <p class="logo-desc">Завод светодиодных светильников</p>
+            </div>
+            <p class="footer-address">
+              Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+              Бизнес-Центр "БРИСТОЛЬ")
+            </p>
+            <p class="footer-official">Официальный производитель LEDEK</p>
             <p class="footer-social">
               Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
             </p>
@@ -298,9 +654,60 @@
               <p>КПП 6616301001</p>
               <p>ОГРН 1216100010059</p>
             </div>
+            <a class="footer-politics" href=""
+              >Политика конфиденциальных данных</a
+            >
+            <a class="develop" href="">Разработка сайта</a>
           </div>
         </div>
+        <div class="footer-info">
+          <a class="footer-tel" href="">+7 800 201 92 69</a>
+          <a class="footer-call" href="">Заказать звонок</a>
+          <a class="footer-mail" href="">sales@ledek.ru</a>
+          <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+  <footer class="footer-mob">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-container">
+          <div class="logo">
+            <a href="../index.html"
+              ><img src="../assets/header-logo.svg" alt=""
+            /></a>
+            <p class="logo-desc">Завод светодиодных светильников</p>
+          </div>
+          <div class="footer-info">
+            <a class="footer-tel" href="">+7 800 201 92 69</a>
+            <a class="footer-call" href="">Заказать звонок</a>
+            <a class="footer-mail" href="">sales@ledek.ru</a>
+            <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-address">
+            Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+            Бизнес-Центр "БРИСТОЛЬ")
+          </p>
+          <p class="footer-official">Официальный производитель LEDEK</p>
+          <p class="footer-social">
+            Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+          </p>
+          <div class="footer-dopdesc">
+            <p>ИНН 6163222441</p>
+            <p>КПП 6616301001</p>
+            <p>ОГРН 1216100010059</p>
+          </div>
+          <a class="footer-politics" href=""
+            >Политика конфиденциальных данных</a
+          >
+          <a class="develop" href="">Разработка сайта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
   </body>
 </html>

@@ -1,3 +1,7 @@
+.lists-wrapper-mob {
+  display: none;
+}
+
 .main {
   margin-top: 70px;
 }
@@ -238,6 +242,9 @@ footer {
   }
 
   .name-list li:nth-child(5) {
+    margin-top: 23px;
+  }
+  .name-list li:nth-child(9) {
     margin-top: 23px;
   }
   .items-wrapper:first-child {

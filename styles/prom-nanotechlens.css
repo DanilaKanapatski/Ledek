@@ -1,3 +1,7 @@
+.lists-wrapper-mob {
+  display: none;
+}
+
 .main {
     margin-top: 70px;
   }
@@ -143,7 +147,7 @@
 
   @media screen and (max-width: 1400px) {
     .main-desc {
-      max-width: 726px;
+      max-width: 651px;
       margin-top: 25px;
     }
   
