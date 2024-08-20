@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="header-desctop">
         <a href="../index.html"
           ><img src="../assets/header-logo.svg" alt=""
         /></a>
@@ -39,6 +39,38 @@
         <a class="tel" href="">+7 800 201 92 69</a>
       </header>
     </div>
+    <header class="header-tablet">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo-wrapper">
+            <img
+              src="../assets/header-logo.svg"
+              alt="Логотип"
+              class="header-logo"
+            />
+            <p class="header-text">Завод светодиодных светильников</p>
+          </div>
+          <div class="contact-info">
+            <a class="tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <a class="mail" href="mailto:sales@ledek.ru">sales@ledek.ru</a>
+          </div>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#">каталог</a></li>
+        <li><a href="#">наши проекты</a></li>
+        <li><a href="#">о компании</a></li>
+        <li><a href="#">отзывы</a></li>
+      </ul>
+    </nav>
     <main>
       <section class="main">
         <div class="container">
@@ -57,11 +89,21 @@
                 светильниками</span
               >
             </p>
-            <img
-              class="main-img"
-              src="../assets/nanopark1-1.png"
-              alt=""
-            />
+            <picture class="main-img">
+              <source
+                srcset="../assets/street-nanopark-1.3.png"
+                media="(max-width: 768px)"
+              />
+              <source
+                srcset="../assets/street-nanopark-1.2.png"
+                media="(max-width: 1200px)"
+              />
+              <source
+                srcset="../assets/street-nanopark-1.1.png"
+                media="(max-width: 1400px)"
+              />
+              <img src="../assets/street-nanopark-1.png" alt="Main img" />
+            </picture>
           </div>
         </div>
       </section>
@@ -104,6 +146,62 @@
                   <li>3023x595x160</li>
                   <li>24</li>
                   <li>фланцевый</li>
+                </ul>
+              </div>
+              <div class="lists-wrapper-mob">
+                <ul class="mob-list">
+                  <li>
+                    <span class="mob-name">Мощность</span>
+                    <p class="mob-desc">30 Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Световой поток</span>
+                    <p class="mob-desc">4800 Лм</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Световая отдача</span>
+                    <p class="mob-desc">160 Лм/Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Цветовая температура</span>
+                    <p class="mob-desc">3000/4000/5000К</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип КСС</span>
+                    <p class="mob-desc">ШБ2</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Угол излучения</span>
+                    <p class="mob-desc">155x70</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Производитель светодиодов</span>
+                    <p class="mob-desc">Bridgelux</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Индекс цветопередачи (CRI)</span>
+                    <p class="mob-desc">≥ 70</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Степень защиты от пыли и влаги</span>
+                    <p class="mob-desc">IP67</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Гарантия</span>
+                    <p class="mob-desc">60 месяцев</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Габаритные размеры, не более</span>
+                    <p class="mob-desc">3023x595x160</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Масса</span>
+                    <p class="mob-desc">24</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип крепления</span>
+                    <p class="mob-desc">фланцевый</p>
+                  </li>
                 </ul>
               </div>
               <div class="item-links">
@@ -151,6 +249,62 @@
                   <li>фланцевый</li>
                 </ul>
               </div>
+              <div class="lists-wrapper-mob">
+                <ul class="mob-list">
+                  <li>
+                    <span class="mob-name">Мощность</span>
+                    <p class="mob-desc">50 Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Световой поток</span>
+                    <p class="mob-desc">8200 Лм</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Световая отдача</span>
+                    <p class="mob-desc">164 Лм/Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Цветовая температура</span>
+                    <p class="mob-desc">3000/4000/5000К</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип КСС</span>
+                    <p class="mob-desc">ШБ2</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Угол излучения</span>
+                    <p class="mob-desc">155x70</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Производитель светодиодов</span>
+                    <p class="mob-desc">Bridgelux</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Индекс цветопередачи (CRI)</span>
+                    <p class="mob-desc">≥ 70</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Степень защиты от пыли и влаги</span>
+                    <p class="mob-desc">IP67</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Гарантия</span>
+                    <p class="mob-desc">60 месяцев</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Габаритные размеры, не более</span>
+                    <p class="mob-desc">4023x595x160</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Масса</span>
+                    <p class="mob-desc">28,5</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип крепления</span>
+                    <p class="mob-desc">фланцевый</p>
+                  </li>
+                </ul>
+              </div>
               <div class="item-links">
                 <a class="link" href="">Рассчитать проект</a>
                 <a class="download" href="">Скачать каталожный лист</a>
@@ -194,6 +348,62 @@
                   <li>5023x795x160</li>
                   <li>34</li>
                   <li>фланцевый</li>
+                </ul>
+              </div>
+              <div class="lists-wrapper-mob">
+                <ul class="mob-list">
+                  <li>
+                    <span class="mob-name">Мощность</span>
+                    <p class="mob-desc">60 Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Световой поток</span>
+                    <p class="mob-desc">9360 Лм</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Световая отдача</span>
+                    <p class="mob-desc">156 лм/Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Цветовая температура</span>
+                    <p class="mob-desc">3000/4000/5000К</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип КСС</span>
+                    <p class="mob-desc">ШБ2</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Угол излучения</span>
+                    <p class="mob-desc">155x70</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Производитель светодиодов</span>
+                    <p class="mob-desc">Bridgelux</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Индекс цветопередачи (CRI)</span>
+                    <p class="mob-desc">≥ 70</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Степень защиты от пыли и влаги</span>
+                    <p class="mob-desc">IP67</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Гарантия</span>
+                    <p class="mob-desc">60 месяцев</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Габаритные размеры, не более</span>
+                    <p class="mob-desc">5023x795x160</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Масса</span>
+                    <p class="mob-desc">34</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип крепления</span>
+                    <p class="mob-desc">фланцевый</p>
+                  </li>
                 </ul>
               </div>
               <div class="item-links">
@@ -241,6 +451,62 @@
                   <li>фланцевый</li>
                 </ul>
               </div>
+              <div class="lists-wrapper-mob">
+                <ul class="mob-list">
+                  <li>
+                    <span class="mob-name">Мощность</span>
+                    <p class="mob-desc">80 Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Световой поток</span>
+                    <p class="mob-desc">11600 Лм</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Световая отдача</span>
+                    <p class="mob-desc">145 лм/Вт</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Цветовая температура</span>
+                    <p class="mob-desc">3000/4000/5000К</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип КСС</span>
+                    <p class="mob-desc">ШБ2</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Угол излучения</span>
+                    <p class="mob-desc">155x70</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Производитель светодиодов</span>
+                    <p class="mob-desc">Bridgelux</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Индекс цветопередачи (CRI)</span>
+                    <p class="mob-desc">≥ 70</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Степень защиты от пыли и влаги</span>
+                    <p class="mob-desc">IP67</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Гарантия</span>
+                    <p class="mob-desc">60 месяцев</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Габаритные размеры, не более</span>
+                    <p class="mob-desc">5023x795x160</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Масса</span>
+                    <p class="mob-desc">34</p>
+                  </li>
+                  <li>
+                    <span class="mob-name">Тип крепления</span>
+                    <p class="mob-desc">фланцевый</p>
+                  </li>
+                </ul>
+              </div>
               <div class="item-links">
                 <a class="link" href="">Рассчитать проект</a>
                 <a class="download" href="">Скачать каталожный лист</a>
@@ -249,7 +515,21 @@
           </div>
           <div class="items-wrapper">
             <div class="img-wrapper">
-              <img src="../assets/nanopark1-6.png" alt="" />
+              <picture>
+                <source
+                  srcset="../assets/street-nanopark-6.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="../assets/street-nanopark-6.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="../assets/street-nanopark-6.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="../assets/street-nanopark-6.png" alt="Main img" />
+              </picture>
             </div>
             <div>
               <div class="item-text-1">
@@ -265,6 +545,19 @@
                       <ul class="value-list">
                         <li>4200Lm/30w</li>
                         <li class="min">480*470*590мм монт диаметр: 77мм</li>
+                      </ul>
+                    </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">4200Lm/30w</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc ps">480*470*590мм
+                            монт диаметр: 77мм</p>
+                        </li>
                       </ul>
                     </div>
                     <a class="download dlink" href=""
@@ -285,6 +578,19 @@
                       <li class="min">480*470*590мм монт диаметр: 77мм</li>
                     </ul>
                   </div>
+                  <div class="lists-wrapper-mob">
+                    <ul class="mob-list">
+                      <li>
+                        <span class="mob-name">Мощность</span>
+                        <p class="mob-desc">4200Lm/30w</p>
+                      </li>
+                      <li>
+                        <span class="mob-name">Размеры</span>
+                        <p class="mob-desc ps">480*470*590мм
+                          монт диаметр: 77мм</p>
+                      </li>
+                    </ul>
+                  </div>
                   <a class="download dlink" href="">Скачать каталожный лист</a>
                 </div>
               </div>
@@ -293,7 +599,21 @@
           </div>
           <div class="items-wrapper">
             <div class="img-wrapper">
-              <img src="../assets/nanopark1-7.png" alt="" />
+              <picture>
+                <source
+                  srcset="../assets/street-nanopark-7.3.png"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="../assets/street-nanopark-7.2.png"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  srcset="../assets/street-nanopark-7.1.png"
+                  media="(max-width: 1400px)"
+                />
+                <img src="../assets/street-nanopark-7.png" alt="Main img" />
+              </picture>
             </div>
             <div>
               <div class="item-text-1">
@@ -309,6 +629,19 @@
                       <ul class="value-list">
                         <li>7000Lm/50w</li>
                         <li class="min">470*670*110мм монт диаметр: 61мм</li>
+                      </ul>
+                    </div>
+                    <div class="lists-wrapper-mob">
+                      <ul class="mob-list">
+                        <li>
+                          <span class="mob-name">Мощность</span>
+                          <p class="mob-desc">4200Lm/30w</p>
+                        </li>
+                        <li>
+                          <span class="mob-name">Размеры</span>
+                          <p class="mob-desc ps">480*470*590мм
+                            монт диаметр: 61мм</p>
+                        </li>
                       </ul>
                     </div>
                     <a class="download dlink" href=""
@@ -329,6 +662,19 @@
                       <li class="min">470*670*110мм монт диаметр: 61мм</li>
                     </ul>
                   </div>
+                  <div class="lists-wrapper-mob">
+                    <ul class="mob-list">
+                      <li>
+                        <span class="mob-name">Мощность</span>
+                        <p class="mob-desc">11200Lm/80w</p>
+                      </li>
+                      <li>
+                        <span class="mob-name">Размеры</span>
+                        <p class="mob-desc ps">470*670*110мм
+                          монт диаметр: 61мм</p>
+                      </li>
+                    </ul>
+                  </div>
                   <a class="download dlink" href="">Скачать каталожный лист</a>
                 </div>
               </div>
@@ -338,7 +684,11 @@
         </div>
       </section>
       <section class="form-section">
-        <img class="form-img1" src="../assets/form-4.png" alt="" />
+        <picture class="form-img1">
+          <source srcset="../assets/form-4.2.png" media="(max-width: 768px)" />
+          <source srcset="../assets/form-4.1.png" media="(max-width: 1200px)" />
+          <img src="../assets/form-4.png" alt="Main img" />
+        </picture>
         <img class="form-img2" src="../assets/form-5.png" alt="" />
         <div class="container">
           <h2 class="title form-title">
@@ -363,7 +713,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-container">
@@ -416,5 +766,84 @@
         </div>
       </div>
     </footer>
+    <footer class="footer-tablet">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div>
+              <div class="logo">
+                <a href="../index.html"
+                  ><img src="../assets/header-logo.svg" alt=""
+                /></a>
+                <p class="logo-desc">Завод светодиодных светильников</p>
+              </div>
+              <p class="footer-address">
+                Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+                Бизнес-Центр "БРИСТОЛЬ")
+              </p>
+              <p class="footer-official">Официальный производитель LEDEK</p>
+              <p class="footer-social">
+                Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+              </p>
+              <div class="footer-dopdesc">
+                <p>ИНН 6163222441</p>
+                <p>КПП 6616301001</p>
+                <p>ОГРН 1216100010059</p>
+              </div>
+              <a class="footer-politics" href=""
+                >Политика конфиденциальных данных</a
+              >
+              <a class="develop" href="">Разработка сайта</a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <a class="footer-tel" href="">+7 800 201 92 69</a>
+            <a class="footer-call" href="">Заказать звонок</a>
+            <a class="footer-mail" href="">sales@ledek.ru</a>
+            <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-mob">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../assets/header-logo.svg" alt=""
+              /></a>
+              <p class="logo-desc">Завод светодиодных светильников</p>
+            </div>
+            <div class="footer-info">
+              <a class="footer-tel" href="">+7 800 201 92 69</a>
+              <a class="footer-call" href="">Заказать звонок</a>
+              <a class="footer-mail" href="">sales@ledek.ru</a>
+              <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-address">
+              Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+              Бизнес-Центр "БРИСТОЛЬ")
+            </p>
+            <p class="footer-official">Официальный производитель LEDEK</p>
+            <p class="footer-social">
+              Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+            </p>
+            <div class="footer-dopdesc">
+              <p>ИНН 6163222441</p>
+              <p>КПП 6616301001</p>
+              <p>ОГРН 1216100010059</p>
+            </div>
+            <a class="footer-politics" href=""
+              >Политика конфиденциальных данных</a
+            >
+            <a class="develop" href="">Разработка сайта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
   </body>
 </html>
