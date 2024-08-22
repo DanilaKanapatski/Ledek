@@ -16,62 +16,102 @@
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/form.css" />
+    <link rel="stylesheet" href="../styles/popap.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/street-nanoeco.css" />
     <title>Ледек</title>
   </head>
   <body>
     <div class="container">
-        <header class="header-desctop">
-          <a href="../index.html"
-            ><img src="../assets/header-logo.svg" alt=""
-          /></a>
-          <p class="header-text">Завод светодиодных светильников</p>
-          <nav class="header-nav">
-            <ul class="header-list">
-              <li class="header-list__item"><a href="#">каталог</a></li>
-              <li class="header-list__item"><a href="#">наши проекты</a></li>
-              <li class="header-list__item"><a href="#">о компании</a></li>
-              <li class="header-list__item"><a href="#">отзывы</a></li>
-            </ul>
-          </nav>
-          <a class="mail" href="">sales@ledek.ru</a>
-          <a class="tel" href="">+7 800 201 92 69</a>
-        </header>
-      </div>
-      <header class="header-tablet">
-        <div class="container">
-          <div class="header-wrapper">
-            <div class="logo-wrapper">
+      <header class="header-desctop">
+        <a href="../index.html"
+          ><img src="../assets/header-logo.svg" alt=""
+        /></a>
+        <p class="header-text">Завод светодиодных светильников</p>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-list__item">
+              <a href="../index.html#catalog">каталог</a>
+            </li>
+            <li class="header-list__item">
+              <a href="../index.html#projects">наши проекты</a>
+            </li>
+            <li class="header-list__item">
+              <a href="../index.html#about">о компании</a>
+            </li>
+            <li class="header-list__item">
+              <a href="../index.html#reviews">отзывы</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="mail" href="mailto:sales@ledek.ru">sales@ledek.ru</a>
+        <a class="tel" href="tel:+78002019269">+7 800 201 92 69</a>
+      </header>
+    </div>
+    <header class="header-tablet">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo-wrapper">
+            <a href="../index.html">
               <img
                 src="../assets/header-logo.svg"
                 alt="Логотип"
                 class="header-logo"
               />
-              <p class="header-text">Завод светодиодных светильников</p>
-            </div>
-            <div class="contact-info">
-              <a class="tel" href="tel:+78002019269">+7 800 201 92 69</a>
-              <a class="mail" href="mailto:sales@ledek.ru">sales@ledek.ru</a>
-            </div>
-            <div class="burger" id="burger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+            </a>
+            <p class="header-text">Завод светодиодных светильников</p>
           </div>
+          <div class="contact-info">
+            <a class="tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <a class="mail" href="mailto:sales@ledek.ru">sales@ledek.ru</a>
+          </div>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="menu" id="menu">
+            <ul>
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../index.html#catalog">Каталог</a></li>
+              <li><a href="../index.html#about">О нас</a></li>
+              <li><a href="../index.html#projects">Наши проекты</a></li>
+              <li><a href="../index.html#reviews">Отзывы</a></li>
+              <li><a href="../index.html#delivery">Доставка</a></li>
+              <li><a href="../index.html#contacts">Контакты</a></li>
+              <a class="link menu-link" href="tel:+78002019269">Позвонить</a>
+            </ul>
+          </nav>
         </div>
-      </header>
-  
-      <nav class="menu" id="menu">
-        <ul>
-          <li><a href="#">каталог</a></li>
-          <li><a href="#">наши проекты</a></li>
-          <li><a href="#">о компании</a></li>
-          <li><a href="#">отзывы</a></li>
-        </ul>
-      </nav>
+      </div>
+    </header>
     <main>
+      <div class="overlay" id="overlay"></div>
+      <div class="popup" id="popup">
+        <span class="close" id="closePopup"></span>
+        <h2>Закажите обратный звонок</h2>
+        <p class="pop-desc">
+          Оставьте ваш номер телефона, мы свяжемся с вами в ближайшее время
+        </p>
+        <form action="../form-handler.php" method="post">
+          <input
+            class="contacts-input pop-input"
+            name="phone"
+            type="tel"
+            placeholder="Ваш телефон"
+            required
+            pattern="[\+\d\s\(\)]{10,20}"
+            maxlength="20"
+            title="Телефон может содержать только цифры, пробелы, скобки и знак +, длиной от 10 до 20 символов"
+          />
+          <button type="submit">Получить</button>
+        </form>
+        <p class="politics">
+          Заполняя форму вы соглашаетесь с
+          <a href="#">политикой конфиденциальности</a>
+        </p>
+      </div>
       <section class="main">
         <div class="container">
           <div class="main-text">
@@ -436,7 +476,7 @@
           </div>
         </div>
       </section>
-      <section class="form-section">
+      <section class="form-section" id="form">
         <picture class="form-img1">
           <source srcset="../assets/form-4.2.png" media="(max-width: 768px)" />
           <source srcset="../assets/form-4.1.png" media="(max-width: 1200px)" />
@@ -455,8 +495,16 @@
               Сделаем по нормам и стандартам светотехники
             </li>
           </ul>
-          <form action="">
-            <input placeholder="Ваш телефон" type="tel" />
+          <form action="../form-handler.php" method="post">
+            <input
+              name="phone"
+              type="tel"
+              placeholder="Ваш телефон"
+              required
+              pattern="[\+\d\s\(\)]{10,20}"
+              maxlength="20"
+              title="Телефон может содержать только цифры, пробелы, скобки и знак +, длиной от 10 до 20 символов"
+            />
             <button class="link form-btn" type="submit">Получить</button>
           </form>
           <p class="form-politics">
@@ -467,115 +515,78 @@
       </section>
     </main>
     <footer class="footer">
-        <div class="container">
-          <div class="footer-wrapper">
-            <div class="footer-container">
-              <div>
-                <div class="logo">
-                  <a href="../index.html"
-                    ><img src="../assets/header-logo.svg" alt=""
-                  /></a>
-                  <p class="logo-desc">Завод светодиодных светильников</p>
-                </div>
-                <p class="footer-address">
-                  Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
-                  Бизнес-Центр "БРИСТОЛЬ")
-                </p>
-                <p class="footer-official">Официальный производитель LEDEK</p>
-                <a class="footer-politics" href=""
-                  >Политика конфиденциальных данных</a
-                >
-              </div>
-              <div class="footer-lists">
-                <ul class="footer-list">
-                  <h4>Услуги</h4>
-                  <li>Монтаж</li>
-                  <li>Подбор корпуса в RAL  </li>
-                  <li>ЭнергоАрбитраж</li>
-                  <li>Светильника на заказ</li>
-                </ul>
-                <ul class="footer-links">
-                  <li>Каталог</li>
-                  <li>Наши проекты</li>
-                  <li>О компании</li>
-                  <li>Отзывы</li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer-info">
-              <a class="footer-tel" href="">+7 800 201 92 69</a>
-              <a class="footer-call" href="">Заказать звонок</a>
-              <a class="footer-mail" href="">sales@ledek.ru</a>
-              <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
-              <p class="footer-social">
-                Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
-              </p>
-              <div class="footer-dopdesc">
-                <p>ИНН 6163222441</p>
-                <p>КПП 6616301001</p>
-                <p>ОГРН 1216100010059</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <footer class="footer-tablet">
-        <div class="container">
-          <div class="footer-wrapper">
-            <div class="footer-container">
-              <div>
-                <div class="logo">
-                  <a href="../index.html"
-                    ><img src="../assets/header-logo.svg" alt=""
-                  /></a>
-                  <p class="logo-desc">Завод светодиодных светильников</p>
-                </div>
-                <p class="footer-address">
-                  Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
-                  Бизнес-Центр "БРИСТОЛЬ")
-                </p>
-                <p class="footer-official">Официальный производитель LEDEK</p>
-                <p class="footer-social">
-                  Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
-                </p>
-                <div class="footer-dopdesc">
-                  <p>ИНН 6163222441</p>
-                  <p>КПП 6616301001</p>
-                  <p>ОГРН 1216100010059</p>
-                </div>
-                <a class="footer-politics" href=""
-                  >Политика конфиденциальных данных</a
-                >
-                <a class="develop" href="">Разработка сайта</a>
-              </div>
-            </div>
-            <div class="footer-info">
-              <a class="footer-tel" href="">+7 800 201 92 69</a>
-              <a class="footer-call" href="">Заказать звонок</a>
-              <a class="footer-mail" href="">sales@ledek.ru</a>
-              <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <footer class="footer-mob">
-        <div class="container">
-          <div class="footer-wrapper">
-            <div class="footer-container">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div>
               <div class="logo">
                 <a href="../index.html"
                   ><img src="../assets/header-logo.svg" alt=""
                 /></a>
                 <p class="logo-desc">Завод светодиодных светильников</p>
               </div>
-              <div class="footer-info">
-                <a class="footer-tel" href="">+7 800 201 92 69</a>
-                <a class="footer-call" href="">Заказать звонок</a>
-                <a class="footer-mail" href="">sales@ledek.ru</a>
-                <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
-              </div>
+              <p class="footer-address">
+                Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+                Бизнес-Центр "БРИСТОЛЬ")
+              </p>
+              <p class="footer-official">Официальный производитель LEDEK</p>
+              <a class="footer-politics" href=""
+                >Политика конфиденциальных данных</a
+              >
             </div>
+            <div class="footer-lists">
+              <ul class="footer-list">
+                <h4>Услуги</h4>
+                <li>Монтаж</li>
+                <li>Подбор корпуса в RAL  </li>
+                <li>ЭнергоАрбитраж</li>
+                <li>Светильника на заказ</li>
+                <a class="develop" href="https://t.me/danilaknptski"
+                  >Разработка сайта</a
+                >
+              </ul>
+              <ul class="footer-links">
+                <li><a href="../index.html#catalog">Каталог</a></li>
+                <li><a href="../index.html#projects">Наши проекты</a></li>
+                <li><a href="../index.html#about">О компании</a></li>
+                <li><a href="../index.html#reviews">Отзывы</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-info">
+            <a class="footer-tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <button class="footer-call" id="orderCall-1">
+              Заказать звонок
+            </button>
+            <a class="footer-mail" href="mailto:sales@ledek.ru"
+              >sales@ledek.ru</a
+            >
+            <a class="footer-doptel" href="tel:+78002019269"
+              >Доп. +7 800 201 92 69</a
+            >
+            <p class="footer-social">
+              Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+            </p>
+            <div class="footer-dopdesc">
+              <p>ИНН 6163222441</p>
+              <p>КПП 6616301001</p>
+              <p>ОГРН 1216100010059</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-tablet">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
             <div>
+              <div class="logo">
+                <a href="../index.html"
+                  ><img src="../assets/header-logo.svg" alt=""
+                /></a>
+                <p class="logo-desc">Завод светодиодных светильников</p>
+              </div>
               <p class="footer-address">
                 Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
                 Бизнес-Центр "БРИСТОЛЬ")
@@ -592,11 +603,73 @@
               <a class="footer-politics" href=""
                 >Политика конфиденциальных данных</a
               >
-              <a class="develop" href="">Разработка сайта</a>
+              <a class="develop" href="https://t.me/danilaknptski"
+                >Разработка сайта</a
+              >
             </div>
           </div>
+          <div class="footer-info">
+            <a class="footer-tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <button class="footer-call" id="orderCall-2">
+              Заказать звонок
+            </button>
+            <a class="footer-mail" href="mailto:sales@ledek.ru"
+              >sales@ledek.ru</a
+            >
+            <a class="footer-doptel" href="tel:+78002019269"
+              >Доп. +7 800 201 92 69</a
+            >
+          </div>
         </div>
-      </footer>
+      </div>
+    </footer>
+    <footer class="footer-mob">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-container">
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../assets/header-logo.svg" alt=""
+              /></a>
+              <p class="logo-desc">Завод светодиодных светильников</p>
+            </div>
+            <div class="footer-info">
+              <a class="footer-tel" href="tel:+78002019269">+7 800 201 92 69</a>
+              <button class="footer-call" id="orderCall-3">
+                Заказать звонок
+              </button>
+              <a class="footer-mail" href="mailto:sales@ledek.ru"
+                >sales@ledek.ru</a
+              >
+              <a class="footer-doptel" href="tel:+78002019269"
+                >Доп. +7 800 201 92 69</a
+              >
+            </div>
+          </div>
+          <div>
+            <p class="footer-address">
+              Ростов-на-Дону, Максима Горького ул, 120, офис 58 (5-й Этаж
+              Бизнес-Центр "БРИСТОЛЬ")
+            </p>
+            <p class="footer-official">Официальный производитель LEDEK</p>
+            <p class="footer-social">
+              Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
+            </p>
+            <div class="footer-dopdesc">
+              <p>ИНН 6163222441</p>
+              <p>КПП 6616301001</p>
+              <p>ОГРН 1216100010059</p>
+            </div>
+            <a class="footer-politics" href=""
+              >Политика конфиденциальных данных</a
+            >
+            <a class="develop" href="https://t.me/danilaknptski"
+              >Разработка сайта</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
       <script src="../script.js"></script>
   </body>
 </html>

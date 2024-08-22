@@ -38,6 +38,7 @@
   position: absolute;
   top: 135px;
   left: 209px;
+
 }
 
 .main-link {
@@ -100,13 +101,13 @@
   margin-left: 885px;
 }
 
-.main-test p {
+.main-test-desc {
   font-size: 22px;
   line-height: 1.3;
   max-width: 365px;
 }
 
-.main-test a {
+.main-test-link {
   margin-top: 35px;
   display: block;
   font-weight: 500;
@@ -172,6 +173,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.slide-img__wrapper:hover {
+  background: #181818;
 }
 
 .slide-desc {
@@ -1047,6 +1052,8 @@ iframe {
     padding: 25px 0;
     max-width: 290px;
     font-weight: 500;
+    text-align: left;
+    padding-left: 55px;
     font-size: 16px;
     line-height: 1.3;
     color: #151414;
@@ -1075,12 +1082,12 @@ iframe {
     margin-top: 40px;
   }
 
-  .main-test p {
+  .main-test-desc {
     font-size: 20px;
     max-width: none;
   }
 
-  .main-test a {
+  .main-test-link {
     margin-top: 20px;
     max-width: 290px !important;
     padding: 25px 0;

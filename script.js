@@ -35,3 +35,128 @@ document.addEventListener('DOMContentLoaded', function() {
         burger.classList.toggle('open');
     });
 });
+
+window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    const content = document.getElementById('content');
+    preloader.style.display = 'none';
+    content.style.display = 'block';
+});
+
+window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    const content = document.getElementById('content');
+    
+    // Таймер на 3 секунды
+    setTimeout(function() {
+        preloader.classList.add('hidden');  // Начинаем анимацию исчезновения
+        setTimeout(function() {
+            preloader.style.display = 'none';
+            content.style.display = 'block';
+        }, 500); // Время должно совпадать с временем transition в CSS
+    }, 2000); // Длительность прелоадера 3 секунды
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const orderCallButton = document.getElementById("orderCall");
+    const closePopupButton = document.getElementById("closePopup");
+    const popup = document.getElementById("popup");
+    const overlay = document.getElementById("overlay");
+  
+    function openPopup() {
+        overlay.style.display = "flex";
+        popup.style.display = "block";
+    }
+  
+    function closePopup() {
+        overlay.style.display = "none";
+        popup.style.display = "none";
+    }
+  
+    orderCallButton.addEventListener("click", openPopup);
+    closePopupButton.addEventListener("click", closePopup);
+  
+    overlay.addEventListener("click", function(e) {
+        if (e.target === overlay) {
+            closePopup();
+        }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const orderCallButton = document.getElementById("orderCall-1");
+    const closePopupButton = document.getElementById("closePopup");
+    const popup = document.getElementById("popup");
+    const overlay = document.getElementById("overlay");
+  
+    function openPopup() {
+        overlay.style.display = "flex";
+        popup.style.display = "block";
+    }
+  
+    function closePopup() {
+        overlay.style.display = "none";
+        popup.style.display = "none";
+    }
+  
+    orderCallButton.addEventListener("click", openPopup);
+    closePopupButton.addEventListener("click", closePopup);
+  
+    overlay.addEventListener("click", function(e) {
+        if (e.target === overlay) {
+            closePopup();
+        }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const orderCallButton = document.getElementById("orderCall-2");
+    const closePopupButton = document.getElementById("closePopup");
+    const popup = document.getElementById("popup");
+    const overlay = document.getElementById("overlay");
+  
+    function openPopup() {
+        overlay.style.display = "flex";
+        popup.style.display = "block";
+    }
+  
+    function closePopup() {
+        overlay.style.display = "none";
+        popup.style.display = "none";
+    }
+  
+    orderCallButton.addEventListener("click", openPopup);
+    closePopupButton.addEventListener("click", closePopup);
+  
+    overlay.addEventListener("click", function(e) {
+        if (e.target === overlay) {
+            closePopup();
+        }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const orderCallButton = document.getElementById("orderCall-3");
+    const closePopupButton = document.getElementById("closePopup");
+    const popup = document.getElementById("popup");
+    const overlay = document.getElementById("overlay");
+  
+    function openPopup() {
+        overlay.style.display = "flex";
+        popup.style.display = "block";
+    }
+  
+    function closePopup() {
+        overlay.style.display = "none";
+        popup.style.display = "none";
+    }
+  
+    orderCallButton.addEventListener("click", openPopup);
+    closePopupButton.addEventListener("click", closePopup);
+  
+    overlay.addEventListener("click", function(e) {
+        if (e.target === overlay) {
+            closePopup();
+        }
+    });
+  });

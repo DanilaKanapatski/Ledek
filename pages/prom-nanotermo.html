@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/form.css" />
+    <link rel="stylesheet" href="../styles/popap.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/prom-nanotermo.css" />
     <title>Ледек</title>
@@ -29,25 +30,36 @@
         <p class="header-text">Завод светодиодных светильников</p>
         <nav class="header-nav">
           <ul class="header-list">
-            <li class="header-list__item"><a href="#">каталог</a></li>
-            <li class="header-list__item"><a href="#">наши проекты</a></li>
-            <li class="header-list__item"><a href="#">о компании</a></li>
-            <li class="header-list__item"><a href="#">отзывы</a></li>
+            <li class="header-list__item">
+              <a href="../index.html#catalog">каталог</a>
+            </li>
+            <li class="header-list__item">
+              <a href="../index.html#projects">наши проекты</a>
+            </li>
+            <li class="header-list__item">
+              <a href="../index.html#about">о компании</a>
+            </li>
+            <li class="header-list__item">
+              <a href="../index.html#reviews">отзывы</a>
+            </li>
           </ul>
         </nav>
-        <a class="mail" href="">sales@ledek.ru</a>
-        <a class="tel" href="">+7 800 201 92 69</a>
+
+        <a class="mail" href="mailto:sales@ledek.ru">sales@ledek.ru</a>
+        <a class="tel" href="tel:+78002019269">+7 800 201 92 69</a>
       </header>
     </div>
     <header class="header-tablet">
       <div class="container">
         <div class="header-wrapper">
           <div class="logo-wrapper">
-            <img
-              src="../assets/header-logo.svg"
-              alt="Логотип"
-              class="header-logo"
-            />
+            <a href="../index.html">
+              <img
+                src="../assets/header-logo.svg"
+                alt="Логотип"
+                class="header-logo"
+              />
+            </a>
             <p class="header-text">Завод светодиодных светильников</p>
           </div>
           <div class="contact-info">
@@ -59,19 +71,47 @@
             <span></span>
             <span></span>
           </div>
+          <nav class="menu" id="menu">
+            <ul>
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../index.html#catalog">Каталог</a></li>
+              <li><a href="../index.html#about">О нас</a></li>
+              <li><a href="../index.html#projects">Наши проекты</a></li>
+              <li><a href="../index.html#reviews">Отзывы</a></li>
+              <li><a href="../index.html#delivery">Доставка</a></li>
+              <li><a href="../index.html#contacts">Контакты</a></li>
+              <a class="link menu-link" href="tel:+78002019269">Позвонить</a>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
-
-    <nav class="menu" id="menu">
-      <ul>
-        <li><a href="#">каталог</a></li>
-        <li><a href="#">наши проекты</a></li>
-        <li><a href="#">о компании</a></li>
-        <li><a href="#">отзывы</a></li>
-      </ul>
-    </nav>
     <main>
+      <div class="overlay" id="overlay"></div>
+      <div class="popup" id="popup">
+        <span class="close" id="closePopup"></span>
+        <h2>Закажите обратный звонок</h2>
+        <p class="pop-desc">
+          Оставьте ваш номер телефона, мы свяжемся с вами в ближайшее время
+        </p>
+        <form action="../form-handler.php" method="post">
+          <input
+            class="contacts-input pop-input"
+            name="phone"
+            type="tel"
+            placeholder="Ваш телефон"
+            required
+            pattern="[\+\d\s\(\)]{10,20}"
+            maxlength="20"
+            title="Телефон может содержать только цифры, пробелы, скобки и знак +, длиной от 10 до 20 символов"
+          />
+          <button type="submit">Получить</button>
+        </form>
+        <p class="politics">
+          Заполняя форму вы соглашаетесь с
+          <a href="#">политикой конфиденциальности</a>
+        </p>
+      </div>
       <section class="main">
         <div class="container">
             <div class="main-text">
@@ -222,7 +262,7 @@
                       </ul>
                     </div>
                     <div class="item-links">
-                        <a class="link" href="">Рассчитать проект</a>
+                        <a class="link" href="#form">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
                     </div>
                 </div>
@@ -366,7 +406,7 @@
                       </ul>
                     </div>
                     <div class="item-links">
-                        <a class="link" href="">Рассчитать проект</a>
+                        <a class="link" href="#form">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
                     </div>
                 </div>
@@ -510,14 +550,14 @@
                       </ul>
                     </div>
                     <div class="item-links">
-                        <a class="link" href="">Рассчитать проект</a>
+                        <a class="link" href="#form">Рассчитать проект</a>
                         <a class="download" href="">Скачать каталожный лист</a>
                     </div>
                 </div>
             </div>
         </div>
       </section>
-      <section class="form-section">
+      <section class="form-section" id="form">
         <picture class="form-img1">
           <source srcset="../assets/form-4.2.png" media="(max-width: 768px)" />
           <source srcset="../assets/form-4.1.png" media="(max-width: 1200px)" />
@@ -536,8 +576,16 @@
               Сделаем по нормам и стандартам светотехники
             </li>
           </ul>
-          <form action="">
-            <input placeholder="Ваш телефон" type="tel" />
+          <form action="../form-handler.php" method="post">
+            <input
+              name="phone"
+              type="tel"
+              placeholder="Ваш телефон"
+              required
+              pattern="[\+\d\s\(\)]{10,20}"
+              maxlength="20"
+              title="Телефон может содержать только цифры, пробелы, скобки и знак +, длиной от 10 до 20 символов"
+            />
             <button class="link form-btn" type="submit">Получить</button>
           </form>
           <p class="form-politics">
@@ -574,20 +622,29 @@
                 <li>Подбор корпуса в RAL  </li>
                 <li>ЭнергоАрбитраж</li>
                 <li>Светильника на заказ</li>
+                <a class="develop" href="https://t.me/danilaknptski"
+                  >Разработка сайта</a
+                >
               </ul>
               <ul class="footer-links">
-                <li>Каталог</li>
-                <li>Наши проекты</li>
-                <li>О компании</li>
-                <li>Отзывы</li>
+                <li><a href="../index.html#catalog">Каталог</a></li>
+                <li><a href="../index.html#projects">Наши проекты</a></li>
+                <li><a href="../index.html#about">О компании</a></li>
+                <li><a href="../index.html#reviews">Отзывы</a></li>
               </ul>
             </div>
           </div>
           <div class="footer-info">
-            <a class="footer-tel" href="">+7 800 201 92 69</a>
-            <a class="footer-call" href="">Заказать звонок</a>
-            <a class="footer-mail" href="">sales@ledek.ru</a>
-            <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+            <a class="footer-tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <button class="footer-call" id="orderCall-1">
+              Заказать звонок
+            </button>
+            <a class="footer-mail" href="mailto:sales@ledek.ru"
+              >sales@ledek.ru</a
+            >
+            <a class="footer-doptel" href="tel:+78002019269"
+              >Доп. +7 800 201 92 69</a
+            >
             <p class="footer-social">
               Общество с ограниченной ответственностью "ЛЕДЕК" (ООО "ЛЕДЕК")
             </p>
@@ -627,14 +684,22 @@
               <a class="footer-politics" href=""
                 >Политика конфиденциальных данных</a
               >
-              <a class="develop" href="">Разработка сайта</a>
+              <a class="develop" href="https://t.me/danilaknptski"
+                >Разработка сайта</a
+              >
             </div>
           </div>
           <div class="footer-info">
-            <a class="footer-tel" href="">+7 800 201 92 69</a>
-            <a class="footer-call" href="">Заказать звонок</a>
-            <a class="footer-mail" href="">sales@ledek.ru</a>
-            <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+            <a class="footer-tel" href="tel:+78002019269">+7 800 201 92 69</a>
+            <button class="footer-call" id="orderCall-2">
+              Заказать звонок
+            </button>
+            <a class="footer-mail" href="mailto:sales@ledek.ru"
+              >sales@ledek.ru</a
+            >
+            <a class="footer-doptel" href="tel:+78002019269"
+              >Доп. +7 800 201 92 69</a
+            >
           </div>
         </div>
       </div>
@@ -650,10 +715,16 @@
               <p class="logo-desc">Завод светодиодных светильников</p>
             </div>
             <div class="footer-info">
-              <a class="footer-tel" href="">+7 800 201 92 69</a>
-              <a class="footer-call" href="">Заказать звонок</a>
-              <a class="footer-mail" href="">sales@ledek.ru</a>
-              <a class="footer-doptel" href="">Доп. +7 800 201 92 69</a>
+              <a class="footer-tel" href="tel:+78002019269">+7 800 201 92 69</a>
+              <button class="footer-call" id="orderCall-3">
+                Заказать звонок
+              </button>
+              <a class="footer-mail" href="mailto:sales@ledek.ru"
+                >sales@ledek.ru</a
+              >
+              <a class="footer-doptel" href="tel:+78002019269"
+                >Доп. +7 800 201 92 69</a
+              >
             </div>
           </div>
           <div>
@@ -673,7 +744,9 @@
             <a class="footer-politics" href=""
               >Политика конфиденциальных данных</a
             >
-            <a class="develop" href="">Разработка сайта</a>
+            <a class="develop" href="https://t.me/danilaknptski"
+              >Разработка сайта</a
+            >
           </div>
         </div>
       </div>
