@@ -31,7 +31,7 @@
 }
 
 .mail::before {
-  content: url("/assets/mail.svg");
+  content: url("../assets/mail.svg");
   position: absolute;
   left: 0;
 }
@@ -45,7 +45,7 @@
 
 .tel::before {
   position: absolute;
-  content: url("/assets/tel.svg");
+  content: url("../assets/tel.svg");
   left: 0;
 }
 
