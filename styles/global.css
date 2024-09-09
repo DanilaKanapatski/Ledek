@@ -23,6 +23,10 @@ a {
   color: var(--link-color);
 }
 
+a:hover {
+  color: white;
+}
+
 body {
   background-color: var(--main-bg-color);
   color: var(--main-color);
@@ -57,6 +61,30 @@ body {
   max-width: 268px;
   width: 100%;
   text-align: center;
+}
+
+.link:hover {
+  background-color: #74F6A9 !important;
+  color: #034C20 !important;
+}
+
+#orderCall:hover {
+  background-color: #74F6A9 !important;
+  color: #034C20 !important;
+}
+
+.main-link:hover {
+  background-color: #232324;
+}
+
+.reviews-link:hover {
+  background-color: #232324;
+}
+
+.link-form:hover {
+  background-color: var(--main-color) !important;
+  color: var(--main-bg-color) !important;
+  border: none;
 }
 
 @media screen and (max-width: 1400px) {
